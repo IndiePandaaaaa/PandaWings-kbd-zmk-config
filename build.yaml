@@ -19,6 +19,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: totem_left
+    shield: pandawings_v1_left
   - board: seeeduino_xiao_ble
-    shield: totem_right
+    shield: pandawings_v1_right
