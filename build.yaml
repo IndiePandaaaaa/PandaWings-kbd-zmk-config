@@ -18,7 +18,7 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2 #seeeduino_xiao_ble
     shield: corne_left
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2 #seeeduino_xiao_ble
     shield: corne_right
