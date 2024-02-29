@@ -1,5 +1,9 @@
 #include "pandawings_v1.dtsi"
 
+&default_transform {
+  col_offset = <5>;
+}
+
 &kscan0 {
   col-gpios = <&xiao_d 6 GPIO_ACTIVE_HIGH>,  // col1
               <&xiao_d 10 GPIO_ACTIVE_HIGH>, // col2
