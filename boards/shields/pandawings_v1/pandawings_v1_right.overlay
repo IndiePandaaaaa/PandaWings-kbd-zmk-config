@@ -5,9 +5,9 @@
 }
 
 &kscan0 {
-  col-gpios = <&xiao_d 6 GPIO_ACTIVE_HIGH>,  // col1
-              <&xiao_d 10 GPIO_ACTIVE_HIGH>, // col2
-              <&xiao_d 9 GPIO_ACTIVE_HIGH>,  // col3
-              <&xiao_d 8 GPIO_ACTIVE_HIGH>,  // col4
-              <&xiao_d 7 GPIO_ACTIVE_HIGH>;  // col5
+  col-gpios = <&xiao_d 6 GPIO_ACTIVE_HIGH>,  // col1 in schematic, col5 on pcb
+              <&xiao_d 10 GPIO_ACTIVE_HIGH>, // col2 in schematic, col4 on pcb
+              <&xiao_d 9 GPIO_ACTIVE_HIGH>,  // col3 in schematic, col3 on pcb
+              <&xiao_d 8 GPIO_ACTIVE_HIGH>,  // col4 in schematic, col2 on pcb
+              <&xiao_d 7 GPIO_ACTIVE_HIGH>;  // col5 in schematic, col1 on pcb
 };
