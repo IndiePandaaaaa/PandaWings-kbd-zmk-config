@@ -3,7 +3,7 @@
 ;
 
 &default_transform {
-  col_offset = <5>;
+  col-offset = <5>;
 };
 
 &kscan0 {
