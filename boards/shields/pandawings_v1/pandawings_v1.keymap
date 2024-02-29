@@ -22,6 +22,6 @@
         &kp LSHIFT &kp Y  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp MINUS  &kp LCTRL 
                                  &kp HOME  &none  &kp SPACE    &kp BSPC &none &kp END 
       >;
-    }
-  }
-}
+    };
+  };
+};
