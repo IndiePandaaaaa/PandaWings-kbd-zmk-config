@@ -26,10 +26,10 @@
 
         num_sym_layer {
             bindings = <
-                &kp PLUS      &kp PERCENT      &kp AMPERSAND      &kp DOLLAR    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS
-&kp ESCAPE      &kp QUESTION  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0      &kp TAB
-&kp LEFT_SHIFT  &kp AT_SIGN   &kp BACKSLASH    &kp PIPE           &kp SLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SEMICOLON  &kp LEFT_CONTROL
-                                               &to 0              &none         &none                 &kp SPACE              &none      &kp RET
+              &kp PLUS      &kp PERCENT      &kp AMPERSAND      &kp DOLLAR    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS
+&kp ESCAPE    &kp QUESTION  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0      &kp TAB
+&kp LEFT_GUI  &kp AT_SIGN   &kp BACKSLASH    &kp PIPE           &kp SLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SEMICOLON  &none
+                                             &to 0              &none         &none                 &kp SPACE              &none      &kp RET
             >;
         };
 
