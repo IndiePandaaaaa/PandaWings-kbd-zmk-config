@@ -1,5 +1,5 @@
 file_format: "1"
-id: pandawings_v1
+id: pandawingsv1
 name: PandaWings v1
 type: shield
 url: https://github.com/IndiePandaaaaa/PandaWings-kbd
@@ -9,5 +9,5 @@ features:
   - leds
   - display
 siblings:
-  - pandawings_v1_left
-  - pandawings_v1_right
+  - pandawingsv1_left
+  - pandawingsv1_right
