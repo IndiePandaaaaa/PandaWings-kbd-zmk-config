@@ -2,4 +2,4 @@ config PANDAWINGSV1_LEFT
   def_bool $(shields_list_contains,pandawingsv1_left)
 
 config PANDAWINGSV1_RIGHT
-  def_bool $(shields_list_contains,pandawingv1_right)
+  def_bool $(shields_list_contains,pandawingsv1_right)
