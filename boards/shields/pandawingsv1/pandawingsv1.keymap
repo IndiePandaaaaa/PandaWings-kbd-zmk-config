@@ -31,49 +31,48 @@
             // | SW7  | SW8  | SW9  | SW10 | SW11 | SW12 |  | SW33 | SW32 | SW31 | SW30 | SW29 | SW34 |
             // | SW13 | SW14 | SW15 | SW16 | SW17 | SW18 |  | SW39 | SW38 | SW37 | SW36 | SW35 | SW28 |
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
-            
 
             bindings = <
-                &kp Q       &kp W           &kp E               &kp R             &kp T  &kp Y  &kp U             &kp I               &kp O           &kp P
-&kp ESC         &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G  &kp H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SHARP_S  &kp TAB
-&kp LEFT_SHIFT  &kp Z       &mt K_CUT X     &mt K_COPY C        &mt K_PASTE V     &kp B  &kp N  &kp M             &kp COMMA           &kp DOT         &kp MINUS            &kp LEFT_CONTROL
-                                            &kp LEFT_GUI        &kp BACKSPACE     &mo 1  &mo 2  &kp SPACE         &kp RETURN
+&kp DE_Q                    &kp W           &kp E               &kp R             &kp T    &kp Y  &kp U             &kp I               &kp O           &kp P
+&kp ESC         &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G    &kp H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SHARP_S  &kp TAB
+&kp LEFT_SHIFT  &kp Z       &mt K_CUT X     &mt K_COPY C        &mt K_PASTE V     &kp B    &kp N  &kp M             &kp COMMA           &kp DOT         &kp DE_MINUS         &kp LEFT_CONTROL
+                                            &kp LEFT_GUI        &kp BACKSPACE     &mo 1    &mo 2  &kp SPACE         &kp RETURN
             >;
         };
 
         num_sym_layer {
             bindings = <
-              &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES     &kp DE_DOLLAR        &kp DE_PERCENT    &kp DE_AMPERSAND  &kp DE_TILDE           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_MINUS
-&kp ESCAPE    &kp DE_AT_SIGN      &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp LEFT_BRACE    &kp DE_LESS_THAN  &kp RIGHT_PARENTHESIS  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS      &kp TAB
-&kp LEFT_GUI  &kp DE_SECTION      &kp DE_PIPE              &kp DE_SLASH         &kp DE_BACKSLASH  &kp DE_PERCENT    &kp DE_HASH            &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_ASTERISK  &kp LEFT_SHIFT
-                                                           &to 0                &none             &none             &kp BACKSPACE          &kp SPACE  &kp DE_N0
+&kp DE_EXCLAMATION                  &kp DE_DOUBLE_QUOTES     &kp DE_DOLLAR        &kp DE_PERCENT     &kp DE_AMPERSAND    &kp DE_TILDE           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_MINUS
+&kp ESCAPE          &kp DE_AT_SIGN  &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LESS_THAN    &kp RIGHT_PARENTHESIS  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS      &kp TAB
+&kp LEFT_GUI        &kp DE_SECTION  &kp DE_PIPE              &kp DE_SLASH         &kp DE_BACKSLASH   &kp DE_PERCENT      &kp DE_HASH            &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_ASTERISK  &kp LEFT_SHIFT
+                                                             &to 0                &none              &none               &kp BACKSPACE          &kp SPACE  &kp DE_N0
             >;
         };
 
         navi_media_layer {
             bindings = <
-              &kp F1        &kp F2        &kp F3        &kp F4            &kp F5          &kp F6          &kp F7            &kp F8             &kp F9           &kp F10
-&to 3         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &none           &kp LEFT_ARROW  &kp DOWN          &kp UP_ARROW       &kp RIGHT        &none    &tog 4
-&kp LEFT_ALT  &none         &bt BT_CLR    &none         &none             &none           &kp C_NEXT      &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &none
-                                          &to 0         &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none           &none             &none
+&kp F1                      &kp F2        &kp F3        &kp F4            &kp F5            &kp F6          &kp F7            &kp F8             &kp F9           &kp F10
+&to 3         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &none             &kp LEFT_ARROW  &kp DOWN          &kp UP_ARROW       &kp RIGHT        &none    &tog 4
+&kp LEFT_ALT  &none         &bt BT_CLR    &none         &none             &none             &kp C_NEXT      &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &none
+                                          &to 0         &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none           &none             &none
             >;
         };
 
         game_layer {
             bindings = <
-         &kp ESCAPE  &kp Q  &kp W  &kp E      &kp R  &kp DE_N1   &kp DE_N2         &kp DE_N3          &kp DE_N4        &kp DE_N5
-&kp TAB  &kp LSHFT   &kp A  &kp S  &kp D      &kp F  &kp C_NEXT  &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none      &none
-&kp RET  &kp LCTRL   &kp Y  &kp X  &kp C      &kp V  &none       &none             &none              &none            &none      &none
-                            &to 0  &kp SPACE  &kp M  &none       &none             &none
+&kp ESCAPE             &kp Q  &kp W  &kp E      &kp R    &kp DE_N1   &kp DE_N2         &kp DE_N3          &kp DE_N4        &kp DE_N5
+&kp TAB     &kp LSHFT  &kp A  &kp S  &kp D      &kp F    &kp C_NEXT  &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none      &none
+&kp RET     &kp LCTRL  &kp Y  &kp X  &kp C      &kp V    &none       &none             &none              &none            &none      &none
+                              &to 0  &kp SPACE  &kp M    &none       &none             &none
             >;
         };
 
         board_layer {
             bindings = <
-       &none  &none  &none       &none  &bootloader  &sys_reset  &none  &none  &none  &none
-&none  &none  &none  &none       &none  &none        &none       &none  &none  &none  &none  &none
-&none  &none  &none  &bt BT_CLR  &none  &none        &none       &none  &none  &none  &none  &none
-                     &to 0       &none  &none        &none       &none  &none
+&none         &none  &none       &none  &bootloader    &sys_reset  &none  &none  &none  &none
+&none  &none  &none  &none       &none  &none          &none       &none  &none  &none  &none  &none
+&none  &none  &none  &bt BT_CLR  &none  &none          &none       &none  &none  &none  &none  &none
+                     &to 0       &none  &none          &none       &none  &none
             >;
         };
     };
