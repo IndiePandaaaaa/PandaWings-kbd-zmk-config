@@ -55,25 +55,25 @@
 &kp DE_EXCLAMATION                  &kp DE_DOUBLE_QUOTES     &kp DE_DOLLAR        &kp DE_PERCENT     &kp DE_AMPERSAND    &kp DE_TILDE   &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_MINUS
 &kp ESCAPE          &kp DE_AT_SIGN  &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LESS_THAN    &kp DE_EQUAL   &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS      &kp TAB
 &kp LEFT_GUI        &kp DE_SECTION  &kp DE_PIPE              &kp DE_SLASH         &kp DE_BACKSLASH   &kp DE_PERCENT      &kp DE_HASH    &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_ASTERISK  &kp LEFT_SHIFT
-                                                             &to 0                &none              &none               &kp BACKSPACE  &kp SPACE  &kp DE_N0
+                                                             &none                &none              &none               &kp BACKSPACE  &kp DE_N0  &kp SPACE
             >;
         };
 
         navi_media_layer {
             bindings = <
 &kp F1                      &kp F2        &kp F3        &kp F4            &kp F5            &kp F6          &kp F7            &kp F8             &kp F9           &kp F10
-&to 3         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &none             &kp LEFT_ARROW  &kp DOWN          &kp UP_ARROW       &kp RIGHT        &none    &tog 4
-&kp LEFT_ALT  &none         &bt BT_CLR    &none         &none             &none             &kp C_NEXT      &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &none
-                                          &to 0         &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none           &none             &none
+&to 3         &kp F2        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN          &kp UP_ARROW       &kp RIGHT        &kp F11  &tog 4
+&kp LEFT_ALT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR        &kp C_NEXT      &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F12  &none
+                                          &none         &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none           &none             &none
             >;
         };
 
         game_layer {
             bindings = <
-&kp ESCAPE             &kp Q  &kp W  &kp E      &kp R    &kp DE_N1   &kp DE_N2         &kp DE_N3          &kp DE_N4        &kp DE_N5
-&kp TAB     &kp LSHFT  &kp A  &kp S  &kp D      &kp F    &kp C_NEXT  &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none      &none
-&kp RET     &kp LCTRL  &kp Y  &kp X  &kp C      &kp V    &none       &none             &none              &none            &none      &none
-                              &to 0  &kp SPACE  &kp M    &none       &none             &none
+&kp ESCAPE                 &kp Q  &kp W  &kp E      &kp R        &kp DE_N1  &kp DE_N2  &kp DE_N3   &kp DE_N4  &kp DE_N5
+&kp TAB         &kp DE_N2  &kp A  &kp S  &kp D      &kp F        &none      &none      &none       &none      &none      &none
+&kp LEFT_SHIFT  &kp LCTRL  &kp Y  &kp X  &kp C      &kp V        &none      &none      &none       &none      &none      &to 0
+                                  &kp M  &kp DE_N3  &kp SPACE    &none      &mo 2      &kp RETURN
             >;
         };
 
