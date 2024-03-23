@@ -6,20 +6,10 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        umlaut_u {
-            bindings = <&kp DE_U_UMLAUT>;
-            key-positions = <6 7>;
-        };
-
-        umlaut_a {
-            bindings = <&kp DE_A_UMLAUT>;
-            key-positions = <11 12>;
-        };
-
-        umlaut_o {
-            bindings = <&kp DE_O_UMLAUT>;
-            key-positions = <8 7>;
+        
+        board_layer {
+            bindings = <&to 4>;
+            key-positions = <1 2 3 6 7 8>;
         };
 
         copy {
@@ -35,25 +25,20 @@
         select_all {
             bindings = <&kp LC(A)>;
             key-positions = <23 24>;
-        };
+        };        
 
-        board_layer {
-            bindings = <&to 4>;
-            key-positions = <1 2 3 6 7 8>;
-        };
-
-        opening_parenthesis {
-            bindings = <&kp DE_LEFT_PARENTHESIS>;
+        closing_parenthesis {
+            bindings = <&kp DE_RIGHT_PARENTHESIS>;
             key-positions = <17 18>;
         };
 
-        opening_brace {
-            bindings = <&kp DE_LEFT_BRACE>;
+        closing_bracket {
+            bindings = <&kp DE_RIGHT_BRACKET>;
             key-positions = <19 17>;
         };
 
-        opening_bracket {
-            bindings = <&kp DE_LEFT_BRACKET>;
+        closing_brace {
+            bindings = <&kp DE_RIGHT_BRACE>;
             key-positions = <19 18>;
         };
     };
@@ -77,18 +62,18 @@
 
         num_sym_layer {
             bindings = <
-&kp DE_EXCLAMATION                  &kp DE_DOUBLE_QUOTES      &kp DE_DOLLAR         &kp DE_PERCENT      &kp DE_AMPERSAND    &kp DE_TILDE   &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_MINUS
-&kp ESCAPE          &kp DE_AT_SIGN  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_BRACE  &kp DE_LESS_THAN    &kp DE_EQUAL   &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS      &kp DE_CARET
-&kp LEFT_GUI        &kp DE_SECTION  &kp DE_PIPE               &kp DE_SLASH          &kp DE_BACKSLASH    &kp DE_PERCENT      &kp DE_HASH    &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_ASTERISK  &mt LEFT_SHIFT SPACE
-                                                              &none                 &none               &none               &kp BACKSPACE  &kp DE_N0  &none
+&kp DE_DOUBLE_QUOTES                      &kp DE_SECTION           &kp DE_AMPERSAND     &kp DE_DOLLAR      &kp DE_PERCENT      &kp DE_TILDE   &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_MINUS
+&kp ESCAPE            &kp DE_AT_SIGN      &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LESS_THAN    &kp DE_EQUAL   &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS      &kp DE_SINGLE_QUOTE
+&kp LEFT_GUI          &kp DE_EXCLAMATION  &kp DE_PIPE              &kp DE_SLASH         &kp DE_BACKSLASH   &kp DE_HASH         &kp DE_CARET   &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_ASTERISK  &mt LEFT_SHIFT SPACE
+                                                                   &none                &none              &none               &kp BACKSPACE  &kp DE_N0  &none
             >;
         };
 
         navi_media_layer {
             bindings = <
-&kp F1                      &kp F2        &kp F3        &kp F4            &kp F5            &kp F6          &kp F7            &kp F8             &kp F9           &kp F10
-&to 3         &kp F2        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN          &kp UP_ARROW       &kp RIGHT        &kp F11  &none
-&kp LEFT_ALT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR        &kp K_NEXT      &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F12  &none
+&kp F1                      &kp F3        &kp F2        &kp F4            &kp F7            &kp K_PREVIOUS  &kp F7            &kp F8             &kp F9           &kp DE_A_UMLAUT
+&to 3         &kp F6        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN          &kp UP_ARROW       &kp RIGHT        &kp DE_O_UMLAUT  &none
+&kp LEFT_ALT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR        &kp K_NEXT      &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp DE_U_UMLAUT  &none
                                           &none         &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none           &none             &none
             >;
         };
