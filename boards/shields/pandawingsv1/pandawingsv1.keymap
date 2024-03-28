@@ -13,6 +13,13 @@
             layers = <0 1 2>;
         };
 
+        select_all {
+            bindings = <&kp LC(A)>;
+            key-positions = <23 24>;
+            layers = <0 1 2>;
+        };
+
+
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <24 25>;
@@ -24,13 +31,6 @@
             key-positions = <25 26>;
             layers = <0 1 2>;
         };
-
-        select_all {
-            bindings = <&kp LC(A)>;
-            key-positions = <23 24>;
-            layers = <0 1 2>;
-        };
-
         opening_parenthesis {
             bindings = <&kp DE_LEFT_PARENTHESIS>;
             key-positions = <12 13>;
@@ -69,19 +69,19 @@
 
         umlaut_a {
             bindings = <&kp DE_A_UMLAUT>;
-            key-positions = <24 31>;
+            key-positions = <29 30>;
             layers = <0>;
         };
 
         umlaut_o {
             bindings = <&kp DE_O_UMLAUT>;
-            key-positions = <30 25>;
+            key-positions = <30 31>;
             layers = <0>;
         };
 
         umlaut_u {
             bindings = <&kp DE_U_UMLAUT>;
-            key-positions = <29 26>;
+            key-positions = <29 31>;
             layers = <0>;
         };
 
@@ -99,7 +99,7 @@
 
         undo {
             bindings = <&kp LC(DE_Z)>;
-            key-positions = <4 5>;
+            key-positions = <15 16>;
         };
 
         redo {
