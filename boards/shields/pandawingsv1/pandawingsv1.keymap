@@ -19,7 +19,6 @@
             layers = <0 1 2>;
         };
 
-
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <24 25>;
@@ -31,6 +30,7 @@
             key-positions = <25 26>;
             layers = <0 1 2>;
         };
+
         opening_parenthesis {
             bindings = <&kp DE_LEFT_PARENTHESIS>;
             key-positions = <12 13>;
@@ -139,10 +139,10 @@
 
         num_sym_layer {
             bindings = <
-&kp DE_DOUBLE_QUOTES                      &kp DE_SECTION           &kp DE_AMPERSAND     &kp DE_DOLLAR      &kp DE_PERCENT      &kp DE_TILDE     &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_CARET
-&kp ESCAPE            &kp DE_AT_SIGN      &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &kp DE_SINGLE_QUOTE
-&kp LEFT_GUI          &kp DE_EXCLAMATION  &kp DE_PIPE              &kp DE_SLASH         &kp DE_BACKSLASH   &kp DE_HASH         &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &mt LEFT_SHIFT SPACE
-                                                                   &none                &none              &none               &kp BACKSPACE    &kp DE_N0  &none
+&kp DE_DOUBLE_QUOTES                      &kp DE_SECTION   &kp DE_AMPERSAND  &kp DE_DOLLAR     &kp DE_PERCENT      &kp DE_TILDE     &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_CARET
+&kp ESCAPE            &kp DE_AT_SIGN      &kp DE_A_UMLAUT  &kp DE_O_UMLAUT   &kp DE_U_UMLAUT   &kp DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &kp DE_SINGLE_QUOTE
+&kp LEFT_GUI          &kp DE_EXCLAMATION  &kp DE_PIPE      &kp DE_SLASH      &kp DE_BACKSLASH  &kp DE_HASH         &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &mt LEFT_SHIFT SPACE
+                                                           &none             &none             &none               &kp BACKSPACE    &kp DE_N0  &none
             >;
         };
 
