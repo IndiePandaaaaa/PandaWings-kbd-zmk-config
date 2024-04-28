@@ -81,7 +81,7 @@
 
         return {
             bindings = <&kp RETURN>;
-            key-positions = <12 19>;
+            key-positions = <12 19 13 18>;
             layers = <0>;
         };
 
@@ -109,13 +109,13 @@
 
         to_base {
             bindings = <&to 0>;
-            key-positions = <3 4 5 6>;
+            key-positions = <3 4 5 6 2 7>;
             layers = <3>;
         };
 
         simple_base {
             bindings = <&to 5>;
-            key-positions = <3 4 5 6>;
+            key-positions = <3 4 5 6 2 7>;
             layers = <0>;
         };
     };
