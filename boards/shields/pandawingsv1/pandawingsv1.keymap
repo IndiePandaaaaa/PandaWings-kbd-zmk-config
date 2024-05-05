@@ -27,13 +27,13 @@
 
         opening_parenthesis {
             bindings = <&kp DE_LEFT_PARENTHESIS>;
-            key-positions = <12 13>;
+            key-positions = <13 14>;
             layers = <0 1>;
         };
 
         opening_bracket {
             bindings = <&kp DE_LEFT_BRACKET>;
-            key-positions = <13 14>;
+            key-positions = <12 13>;
             layers = <0 1>;
         };
 
@@ -109,13 +109,19 @@
 
         to_base {
             bindings = <&to 0>;
-            key-positions = <3 4 5 6 2 7>;
-            layers = <3>;
+            key-positions = <35 36 37 38>;
+            layers = <3 4>;
         };
 
-        simple_base {
+        to_simple {
             bindings = <&to 5>;
-            key-positions = <3 4 5 6 2 7>;
+            key-positions = <35 36 37 38>;
+            layers = <0>;
+        };
+
+        to_game {
+            bindings = <&to 4>;
+            key-positions = <34 35 38 39>;
             layers = <0>;
         };
     };
@@ -173,7 +179,7 @@
         media_navigation {
             bindings = <
 &kp F1                      &kp F3        &kp F2        &kp F4            &kp F7            &kp K_PREVIOUS  &kp C_PLAY   &kp C_VOLUME_UP    &kp F9      &kp F7
-&to 4         &kp F6        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW       &kp RIGHT   &kp F8      &none
+&none         &kp F6        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW       &kp RIGHT   &kp F8      &none
 &kp LEFT_ALT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR        &kp K_NEXT      &kp C_PAUSE  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp ESCAPE  &none
                                           &alt_f4       &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none           &none        &none
             >;
@@ -192,16 +198,16 @@
             bindings = <
 &kp B                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp U       &kp DE_I       &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G      &kp H     &kp J       &kp K          &kp L         &kp P
-&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp V        &kp B      &kp N     &kp M       &kp DE_PERIOD  &kp DE_COMMA  &to 0
+&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp V        &kp B      &kp N     &kp M       &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
                                       &kp M  &mo 5  &kp SPACE    &kp DE_N4  &kp F12   &kp RETURN
             >;
         };
 
         game_2 {
             bindings = <
-&kp DE_N2          &kp T           &kp UP_ARROW    &kp I            &kp DE_N4                &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &destruction_palworld    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans          &trans          &trans           &kp N3                   &trans  &trans  &trans  &trans  &trans  &trans
+&kp DE_N1          &kp DE_N2       &kp UP_ARROW    &kp DE_N3        &kp DE_N4                &trans  &trans  &trans  &trans  &trans
+&kp I      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &destruction_palworld    &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans          &trans          &trans           &kp DE_N5                &trans  &trans  &trans  &trans  &trans  &trans
                                    &trans          &trans           &trans                   &trans  &trans  &trans
             >;
         };
