@@ -110,7 +110,7 @@
         to_base {
             bindings = <&to 0>;
             key-positions = <35 36 37 38>;
-            layers = <3 4>;
+            layers = <3 4 5>;
         };
 
         to_simple {
