@@ -170,8 +170,8 @@
 
         media_navigation {
             bindings = <
-&kp F1                      &kp F3        &kp F2        &kp F4            &kp F7            &kp K_PREVIOUS  &kp C_PLAY   &kp C_VOLUME_UP    &kp F9      &kp F7
-&none         &kp F6        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW       &kp RIGHT   &kp F8      &none
+&kp F1                      &kp F3        &kp F2        &kp F4            &kp F7            &kp K_PREVIOUS  &kp C_PLAY   &kp C_VOLUME_UP    &kp F8      &kp F9
+&none         &kp F6        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW       &kp RIGHT   &kp F5      &none
 &kp LEFT_ALT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR        &kp K_NEXT      &kp C_PAUSE  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp ESCAPE  &none
                                           &alt_f4       &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none           &none        &none
             >;
@@ -198,8 +198,8 @@
         game_2 {
             bindings = <
 &kp DE_N1             &kp DE_N2       &kp UP_ARROW    &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
-&trans        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &trans
-&kp LEFT_ALT  &trans  &kp I           &kp J           &kp K            &kp DE_N6    &trans  &trans         &trans  &trans  &trans  &trans
+&trans        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp T        &trans  &trans         &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &trans  &kp I           &kp J           &kp K            &kp G        &trans  &trans         &trans  &trans  &trans  &trans
                                       &trans          &trans           &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
