@@ -198,8 +198,8 @@
         game_2 {
             bindings = <
 &kp DE_N1             &kp DE_N2       &kp UP_ARROW    &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
-&trans        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp T        &trans  &trans         &trans  &trans  &trans  &trans
-&kp LEFT_ALT  &trans  &kp I           &kp J           &kp K            &kp G        &trans  &trans         &trans  &trans  &trans  &trans
+&trans        &kp F5  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp T        &trans  &trans         &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &kp F9  &kp I           &kp J           &kp K            &kp G        &trans  &trans         &trans  &trans  &trans  &trans
                                       &trans          &trans           &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
