@@ -157,9 +157,9 @@
         numbers_symbols {
             bindings = <
 &kp DE_SECTION                      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND  &kp DE_DOLLAR     &kp DE_PERCENT         &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_CARET
-&kp ESCAPE      &kp DE_AT_SIGN      &kp DE_HASH           &kp DE_ACUTE      &kp DE_LESS_THAN  &kp DE_GREATER_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS   &kp DE_SINGLE_QUOTE
+&kp ESCAPE      &kp DE_AT_SIGN      &kp DE_EURO           &kp DE_GRAVE      &kp DE_LESS_THAN  &kp DE_GREATER_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS   &kp DE_SINGLE_QUOTE
 &kp LEFT_GUI    &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH      &kp DE_BACKSLASH  &kp DE_HASH            &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp DE_MINUS  &kp LEFT_SHIFT
-                                                          &kp DE_EURO       &none             &none                  &kp BACKSPACE    &kp DE_N0  &kp DE_DOT
+                                                          &kp RA(I)         &none             &none                  &kp BACKSPACE    &kp DE_N0  &kp DE_DOT
             >;
         };
 
