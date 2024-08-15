@@ -25,6 +25,11 @@
             layers = <0 1 2>;
         };
 
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <26 27>;
+        };
+
         opening_parenthesis {
             bindings = <&kp DE_LEFT_PARENTHESIS>;
             key-positions = <13 14>;
@@ -97,16 +102,6 @@
             layers = <0 1>;
         };
 
-        undo {
-            bindings = <&kp LC(DE_Z)>;
-            key-positions = <15 16>;
-        };
-
-        redo {
-            bindings = <&kp LS(LC(DE_Z))>;
-            key-positions = <27 28>;
-        };
-
         to_base {
             bindings = <&to 0>;
             key-positions = <35 36 37 38>;
@@ -115,7 +110,7 @@
 
         to_simple {
             bindings = <&to 5>;
-            key-positions = <35 36 37 38>;
+            key-positions = <10 22 21 33>;
             layers = <0>;
         };
 
@@ -152,19 +147,19 @@
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
 
             bindings = <
-&kp Q                                &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
-&kp ESC                  &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SHARP_S  &kp TAB
-&mt LEFT_SHIFT CAPSLOCK  &kp DE_Y    &kp X           &kp C               &kp V             &kp B           &kp N      &kp M             &kp COMMA           &kp DOT         &kp DE_MINUS         &kp RETURN
-                                                     &kp ESCAPE          &kp SPACE         &lt 1 DELETE    &lt 2 TAB  &kp BACKSPACE     &kp RETURN
+&kp Q                                &kp W           &kp E               &kp R             &kp T              &kp DE_Z         &kp U             &kp I               &kp O           &kp P
+&kp ESC                  &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt G RIGHT_ALT    &mt H RIGHT_ALT  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SHARP_S  &kp DE_ACUTE
+&mt LEFT_SHIFT CAPSLOCK  &kp DE_Y    &kp X           &kp C               &kp V             &kp B              &kp N            &kp M             &kp COMMA           &kp DOT         &kp DE_MINUS         &kp RETURN
+                                                     &kp CAPSLOCK        &kp SPACE         &lt 1 DELETE       &lt 2 TAB        &kp BACKSPACE     &kp RETURN
             >;
         };
 
         numbers_symbols {
             bindings = <
-&kp DE_SECTION                      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND  &kp DE_DOLLAR     &kp DE_PERCENT         &kp DE_TILDE     &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_CARET
-&kp ESCAPE      &kp DE_AT_SIGN      &kp DE_HASH           &kp DE_ACUTE      &kp DE_LESS_THAN  &kp DE_GREATER_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &kp DE_SINGLE_QUOTE
-&kp LEFT_GUI    &kp DE_EXCLAMATION  &kp DE_PIPE           &kp DE_SLASH      &kp DE_BACKSLASH  &kp DE_HASH            &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &kp LEFT_SHIFT
-                                                          &none             &none             &none                  &kp BACKSPACE    &kp DE_N0  &none
+&kp DE_SECTION                      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND  &kp DE_DOLLAR     &kp DE_PERCENT         &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_CARET
+&kp ESCAPE      &kp DE_AT_SIGN      &kp DE_HASH           &kp DE_ACUTE      &kp DE_LESS_THAN  &kp DE_GREATER_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS   &kp DE_SINGLE_QUOTE
+&kp LEFT_GUI    &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH      &kp DE_BACKSLASH  &kp DE_HASH            &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp DE_MINUS  &kp LEFT_SHIFT
+                                                          &kp DE_EURO       &none             &none                  &kp BACKSPACE    &kp DE_N0  &kp DE_DOT
             >;
         };
 
@@ -188,19 +183,19 @@
 
         game {
             bindings = <
-&kp B                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp U       &kp DE_I       &kp O
+&kp B                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp U       &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G      &kp H     &kp J       &kp K          &kp L         &kp P
 &kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp V        &kp B      &kp N     &kp M       &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
-                                      &kp M  &mo 5  &kp SPACE    &kp DE_N4  &kp F12   &kp RETURN
+                                      &kp M  &mo 5  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
             >;
         };
 
         game_2 {
             bindings = <
-&kp DE_N1             &kp DE_N2       &kp UP_ARROW    &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
-&trans        &kp F5  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp T        &trans  &trans         &trans  &trans  &trans  &trans
-&kp LEFT_ALT  &kp F9  &kp I           &kp J           &kp K            &kp G        &trans  &trans         &trans  &trans  &trans  &trans
-                                      &trans          &trans           &trans       &trans  &kp BACKSPACE  &trans
+&kp DE_N1             &kp DE_N2       &kp UP_ARROW    &kp DE_N3        &kp DE_N4     &trans  &trans         &trans  &trans  &trans
+&kp DE_COMMA  &kp F5  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G         &trans  &trans         &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &kp F9  &kp K           &kp J           &kp I            &kp DE_DOT    &trans  &trans         &trans  &trans  &trans  &trans
+                                      &trans          &trans           &trans        &trans  &kp BACKSPACE  &trans
             >;
         };
     };
