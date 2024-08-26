@@ -84,7 +84,7 @@
 
         umlaut_u {
             bindings = <&kp DE_U_UMLAUT>;
-            key-positions = <29 31>;
+            key-positions = <31 32>;
             layers = <0>;
         };
 
