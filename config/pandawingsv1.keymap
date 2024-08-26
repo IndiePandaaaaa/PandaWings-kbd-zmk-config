@@ -3,6 +3,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&caps_word {
+  continue_list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -150,7 +154,7 @@
 &kp Q                       &kp W           &kp E               &kp R             &kp T              &kp DE_Z         &kp U             &kp I               &kp O           &kp P
 &kp ESC         &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt RIGHT_ALT G    &mt RIGHT_ALT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SHARP_S  &kp DE_ACUTE
 &kp LEFT_SHIFT  &kp DE_Y    &kp X           &kp C               &kp V             &kp B              &kp N            &kp M             &kp COMMA           &kp DOT         &kp DE_MINUS         &kp RETURN
-                                            &kp CAPSLOCK        &kp SPACE         &lt 1 DELETE       &lt 2 TAB        &kp BACKSPACE     &kp RETURN
+                                            &caps_word        &kp SPACE         &lt 1 DELETE       &lt 2 TAB        &kp BACKSPACE     &kp RETURN
             >;
         };
 
