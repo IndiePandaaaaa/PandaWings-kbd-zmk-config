@@ -192,10 +192,10 @@
 
         game_2 {
             bindings = <
-&kp DE_N1             &kp DE_N2       &kp UP_ARROW    &kp DE_N3        &kp DE_N4     &trans  &trans         &trans  &trans  &trans
-&kp DE_COMMA  &kp F5  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G         &trans  &trans         &trans  &trans  &trans  &trans
-&kp LEFT_ALT  &kp F9  &kp K           &kp J           &kp I            &kp DE_DOT    &trans  &trans         &trans  &trans  &trans  &trans
-                                      &trans          &trans           &trans        &trans  &kp BACKSPACE  &trans
+&kp DE_N1             &kp DE_N2       &kp UP_ARROW    &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
+&kp DE_DOT    &kp F5  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
+&kp LEFT_ALT  &kp F9  &kp K           &kp J           &kp I            &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
+                                      &kp DE_N7       &none            &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
     };
