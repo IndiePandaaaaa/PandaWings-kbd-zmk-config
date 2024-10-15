@@ -1,16 +1,26 @@
-if PANDAWINGSV1_LEFT
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
-  config ZMK_KEYBOARD_NAME
-    default "PandaWings"
+if PANDAWINGSV1_DONGLE
 
-  config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+config ZMK_KEYBOARD_NAME
+    default "PandaWings Dongle"
+	
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+	
+config ZMK_USB
+	default y
 
 endif
 
-if PANDAWINGSV1_LEFT || PANDAWINGSV1_RIGHT
+if PANDAWINGSV1_LEFT || PANDAWINGSV1_RIGHT || PANDAWINGSV1_DONGLE 
 
-  config ZMK_SPLIT
-    default y
+config ZMK_SPLIT
+	default y
 
+config ZMK_BLE
+	default y
+	
 endif
+
