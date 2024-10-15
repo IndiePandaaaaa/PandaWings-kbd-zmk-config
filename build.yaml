@@ -22,3 +22,5 @@ include:
     shield: pandawingsv1_left
   - board: seeeduino_xiao_ble
     shield: pandawingsv1_right
+  - board: seeeduino_xiao_ble
+    shield: pandawingsv1_dongle
