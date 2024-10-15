@@ -4,7 +4,7 @@
 if PANDAWINGSV1_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "PandaWings Dongle"
+    default "PandaWings"
 	
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
