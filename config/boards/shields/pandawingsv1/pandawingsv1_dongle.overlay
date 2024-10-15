@@ -51,5 +51,5 @@
       , <&xiao_d 2 GPIO_ACTIVE_HIGH>
       , <&xiao_d 1 GPIO_ACTIVE_HIGH>
     ;
-  }
-};
+  };
+}
