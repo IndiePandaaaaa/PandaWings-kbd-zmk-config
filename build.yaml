@@ -19,10 +19,10 @@
 ---
 include:
   - board: seeeduino_xiao_ble
+    shield: settings_reset
+  - board: seeeduino_xiao_ble
     shield: pandawingsv1_left
   - board: seeeduino_xiao_ble
     shield: pandawingsv1_right
-  - board: seeeduino_xiao_ble
-    shield: pandawingsv1_dongle
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+    #  - board: seeeduino_xiao_ble
+    #    shield: pandawingsv1_dongle
