@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&caps_word { continue-list = <DELETE DEL BACKSPACE KP_MINUS SLASH QUESTION>; };
+&caps_word { continue-list = <DELETE DEL BACKSPACE KP_MINUS SLASH QUESTION SEMICOLON RIGHT_BRACKET SINGLE_QUOTE>; };
 
 / {
     combos {
