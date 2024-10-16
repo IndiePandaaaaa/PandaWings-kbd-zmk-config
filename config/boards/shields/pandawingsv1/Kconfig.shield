@@ -3,6 +3,3 @@ config PANDAWINGSV1_LEFT
 
 config PANDAWINGSV1_RIGHT
   def_bool $(shields_list_contains,pandawingsv1_right)
-
-config PANDAWINGSV1_DONGLE
-	def_bool $(shields_list_contains,pandawingsv1_dongle)
