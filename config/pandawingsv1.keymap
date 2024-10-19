@@ -12,114 +12,115 @@
         select_all {
             bindings = <&kp LC(A)>;
             key-positions = <23 24>;
-            layers = <0 1 2>;
+            layers = <0 5>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <24 25>;
-            layers = <0 1 2>;
+            layers = <0 5>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <25 26>;
-            layers = <0 1 2>;
+            layers = <0 5>;
         };
 
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <26 27>;
+            layers = <0 5>;
         };
 
         opening_parenthesis {
             bindings = <&kp DE_LEFT_PARENTHESIS>;
             key-positions = <13 14>;
-            layers = <0 1>;
+            layers = <0 5>;
         };
 
         opening_bracket {
             bindings = <&kp DE_LEFT_BRACKET>;
             key-positions = <12 13>;
-            layers = <0 1>;
+            layers = <0 5>;
         };
 
         opening_brace {
             bindings = <&kp DE_LEFT_BRACE>;
             key-positions = <12 14>;
-            layers = <0 1>;
+            layers = <0 5>;
         };
 
         closing_parenthesis {
             bindings = <&kp DE_RIGHT_PARENTHESIS>;
             key-positions = <17 18>;
-            layers = <0 1>;
+            layers = <0 5>;
         };
 
         closing_bracket {
             bindings = <&kp DE_RIGHT_BRACKET>;
             key-positions = <19 18>;
-            layers = <0 1>;
+            layers = <0 5>;
         };
 
         closing_brace {
             bindings = <&kp DE_RIGHT_BRACE>;
             key-positions = <19 17>;
-            layers = <0 1>;
+            layers = <0 5>;
         };
 
         umlaut_a {
             bindings = <&kp DE_A_UMLAUT>;
             key-positions = <29 30>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         umlaut_o {
             bindings = <&kp DE_O_UMLAUT>;
             key-positions = <30 31>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         umlaut_u {
             bindings = <&kp DE_U_UMLAUT>;
             key-positions = <31 29>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         return {
             bindings = <&kp RETURN>;
             key-positions = <36 37>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         home {
             bindings = <&kp HOME>;
             key-positions = <12 13 14>;
-            layers = <0 1>;
+            layers = <0 5>;
         };
 
         end {
             bindings = <&kp END>;
             key-positions = <17 18 19>;
-            layers = <0 1>;
+            layers = <0 5>;
         };
 
         to_base {
             bindings = <&to 0>;
             key-positions = <34 39>;
-            layers = <3 4 5>;
+            layers = <3 4 5 1 2>;
         };
 
-        to_simple {
-            bindings = <&to 5>;
+        to_colemak {
+            bindings = <&to 4>;
             key-positions = <10 21>;
             layers = <0>;
         };
 
         to_game {
-            bindings = <&to 4>;
+            bindings = <&to 3>;
             key-positions = <22 33>;
-            layers = <0>;
+            layers = <0 5>;
         };
     };
 
@@ -142,17 +143,17 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        base_qwertz {
             //        | SW2  | SW3  | SW4  | SW5  | SW6  |  | SW27 | SW26 | SW25 | SW24 | SW23 | 
             // | SW7  | SW8  | SW9  | SW10 | SW11 | SW12 |  | SW33 | SW32 | SW31 | SW30 | SW29 | SW34 |
             // | SW13 | SW14 | SW15 | SW16 | SW17 | SW18 |  | SW39 | SW38 | SW37 | SW36 | SW35 | SW28 |
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
 
             bindings = <
-&kp Q                       &kp W           &kp E               &kp R             &kp T              &kp DE_Z         &kp U             &kp I               &kp O           &kp P
-&kp ESC         &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt RIGHT_ALT G    &mt RIGHT_ALT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SHARP_S  &kp DE_ACUTE
-&kp LEFT_SHIFT  &kp DE_Y    &kp X           &kp C               &kp V             &kp B              &kp N            &kp M             &kp COMMA           &kp DOT         &kp DE_MINUS         &kp RETURN
-                                            &caps_word          &kp SPACE         &lt 1 DELETE       &lt 2 TAB        &kp BACKSPACE     &kp RETURN
+&kp Q                       &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
+&kp ESC         &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SHARP_S  &kp DE_ACUTE
+&kp LEFT_SHIFT  &kp DE_Y    &kp X           &kp C               &kp V             &kp B           &kp N      &kp M             &kp COMMA           &kp DOT         &kp DE_MINUS         &kp RETURN
+                                            &caps_word          &kp SPACE         &lt 1 DELETE    &lt 2 TAB  &kp BACKSPACE     &kp RETURN
             >;
         };
 
@@ -174,21 +175,12 @@
             >;
         };
 
-        simple_base {
-            bindings = <
-&kp Q                     &kp W  &kp E  &kp R      &kp T    &kp DE_Z  &kp U          &kp I      &kp O    &kp P
-&kp ESC         &kp A     &kp S  &kp D  &kp F      &kp G    &kp H     &kp J          &kp K      &kp L    &kp DE_SHARP_S  &kp TAB
-&kp LEFT_SHIFT  &kp DE_Y  &kp X  &kp C  &kp V      &kp B    &kp N     &kp M          &kp COMMA  &kp DOT  &kp DE_MINUS    &kp RETURN
-                                 &none  &kp SPACE  &mo 1    &mo 2     &kp BACKSPACE  &none
-            >;
-        };
-
         game {
             bindings = <
 &kp T                       &kp Q     &mt W N3  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &mt S N2  &kp D  &kp F        &kp G      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
 &kp TAB     &kp LCTRL       &kp DE_Y  &kp X     &kp C  &kp B        &kp B      &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
-                                      &kp M     &mo 5  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
+                                      &kp M     &mo 4  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
             >;
         };
 
@@ -198,6 +190,15 @@
 &kp DE_DOT    &kp F5     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
 &kp LEFT_ALT  &kp DE_N7  &kp B           &kp O           &kp P            &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
                                          &kp DE_N6       &none            &trans       &trans  &kp BACKSPACE  &trans
+            >;
+        };
+
+        colemakdh {
+            bindings = <
+&kp Q                           &kp W           &kp F        &kp P             &kp B           &kp J      &kp L             &kp U               &kp Y           &kp SEMI
+&kp ESC         &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G           &kp M      &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &kp TAB
+&kp LEFT_SHIFT  &kp DE_Y        &kp X           &kp C        &kp D             &kp V           &kp K      &kp H             &kp COMMA           &kp DOT         &kp DE_MINUS    &kp RETURN
+                                                &caps_word   &kp SPACE         &lt 1 DELETE    &lt 2 TAB  &kp BACKSPACE     &kp RETURN
             >;
         };
     };
