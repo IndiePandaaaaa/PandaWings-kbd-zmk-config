@@ -185,18 +185,18 @@
 
         game {
             bindings = <
-&kp B                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp U       &kp I          &kp O
-&kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G      &kp H     &kp J       &kp K          &kp L         &kp P
-&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp V        &kp B      &kp N     &kp M       &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
-                                      &kp M  &mo 5  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
+&kp T                       &kp Q     &mt W N3  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
+&kp ESCAPE  &kp LEFT_SHIFT  &kp A     &mt S N2  &kp D  &kp F        &kp G      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
+&kp TAB     &kp LCTRL       &kp DE_Y  &kp X     &kp C  &kp B        &kp B      &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
+                                      &kp M     &mo 5  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
             >;
         };
 
         game_2 {
             bindings = <
-&kp DE_N1                &kp DE_N2       &kp UP_ARROW    &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
+&kp J                    &kp N1          &kp N2          &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
 &kp DE_DOT    &kp F5     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
-&kp LEFT_ALT  &kp DE_N7  &kp K           &kp J           &kp I            &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
+&kp LEFT_ALT  &kp DE_N7  &kp B           &kp O           &kp P            &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
                                          &kp DE_N6       &none            &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
