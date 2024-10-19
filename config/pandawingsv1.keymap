@@ -122,6 +122,12 @@
             key-positions = <22 33>;
             layers = <0 5>;
         };
+
+        euro_sign {
+            bindings = <&kp DE_EURO>;
+            key-positions = <12 14>;
+            layers = <1>;
+        };
     };
 
     macros {
