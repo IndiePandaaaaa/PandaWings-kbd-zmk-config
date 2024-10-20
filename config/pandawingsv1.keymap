@@ -128,6 +128,18 @@
             key-positions = <12 14>;
             layers = <1>;
         };
+
+        weapon_2 {
+            bindings = <&kp N2>;
+            key-positions = <12 14>;
+            layers = <3>;
+        };
+
+        weapon_3 {
+            bindings = <&kp N3>;
+            key-positions = <1 3>;
+            layers = <3>;
+        };
     };
 
     macros {
@@ -183,10 +195,10 @@
 
         game {
             bindings = <
-&kp T                       &kp Q     &mt W N3  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
-&kp ESCAPE  &kp LEFT_SHIFT  &kp A     &mt S N2  &kp D  &kp F        &kp G      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
-&kp TAB     &kp LCTRL       &kp DE_Y  &kp X     &kp C  &kp B        &kp B      &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
-                                      &kp M     &mo 4  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
+&kp T                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
+&kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
+&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp B        &kp B      &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
+                                      &kp M  &mo 4  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
             >;
         };
 
