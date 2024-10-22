@@ -140,18 +140,6 @@
             key-positions = <1 3>;
             layers = <3>;
         };
-
-        PgUp {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <0 2>;
-            layers = <0 5>;
-        };
-
-        PgDn {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <1 3>;
-            layers = <0 5>;
-        };
     };
 
     macros {
@@ -199,8 +187,8 @@
         media_navigation {
             bindings = <
 &kp F1                      &kp F3        &kp F2        &kp F4            &kp F7            &kp K_PREVIOUS  &kp C_PLAY   &kp C_VOLUME_UP    &kp F8      &kp F9
-&none         &kp F6        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW       &kp RIGHT   &kp F5      &none
-&kp LEFT_ALT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR        &kp K_NEXT      &kp C_PAUSE  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp ESCAPE  &none
+&none         &kp F6        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW       &kp RIGHT   &kp F5      &kp PAGE_UP
+&kp LEFT_ALT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR        &kp K_NEXT      &kp C_PAUSE  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp ESCAPE  &kp PAGE_DOWN
                                           &alt_f4       &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none           &none        &none
             >;
         };
