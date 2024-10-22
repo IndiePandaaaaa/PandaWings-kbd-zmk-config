@@ -140,6 +140,18 @@
             key-positions = <1 3>;
             layers = <3>;
         };
+
+        PgUp {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <0 2>;
+            layers = <0 5>;
+        };
+
+        PgDn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <1 3>;
+            layers = <0 5>;
+        };
     };
 
     macros {
