@@ -132,13 +132,13 @@
         weapon_2 {
             bindings = <&kp N2>;
             key-positions = <12 14>;
-            layers = <3>;
+            layers = <3 4>;
         };
 
         weapon_3 {
             bindings = <&kp N3>;
             key-positions = <1 3>;
-            layers = <3>;
+            layers = <3 4>;
         };
     };
 
@@ -195,25 +195,25 @@
 
         game {
             bindings = <
-&kp T                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
+&kp J                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
-&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp B        &kp B      &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
+&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp T        &kp B      &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
                                       &kp M  &mo 4  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
             >;
         };
 
         game_2 {
             bindings = <
-&kp J                    &kp N1          &kp N2          &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
+&trans                   &kp N1          &kp N2          &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
 &kp DE_DOT    &kp F5     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
-&kp LEFT_ALT  &kp DE_N7  &kp B           &kp O           &kp P            &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
+&kp LEFT_ALT  &kp DE_N7  &trans          &kp O           &kp P            &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
                                          &kp DE_N6       &none            &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
 
         colemakdh {
             bindings = <
-&kp Q                           &kp W           &kp F        &kp P             &kp B           &kp J      &kp L             &kp U               &kp Y           &kp SEMI
+&kp Q                           &kp W           &kp F        &kp P             &kp B           &kp J      &kp L             &kp U               &kp Y           &kp DE_SHARP_S
 &kp ESC         &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G           &kp M      &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &kp TAB
 &kp LEFT_SHIFT  &kp DE_Y        &kp X           &kp C        &kp D             &kp V           &kp K      &kp H             &kp COMMA           &kp DOT         &kp DE_MINUS    &kp RETURN
                                                 &caps_word   &kp SPACE         &lt 1 DELETE    &lt 2 TAB  &kp BACKSPACE     &kp RETURN
