@@ -206,7 +206,7 @@
             bindings = <
 &trans                   &kp N1          &kp N2          &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
 &kp DE_DOT    &kp F5     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
-&kp LEFT_ALT  &kp DE_N7  &trans          &kp O           &kp P            &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
+&kp LEFT_ALT  &kp DE_N7  &kp B           &kp O           &kp P            &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
                                          &kp DE_N6       &none            &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
