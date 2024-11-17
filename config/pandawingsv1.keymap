@@ -131,7 +131,7 @@
 
         weapon_2 {
             bindings = <&kp N2>;
-            key-positions = <12 14>;
+            key-positions = <24 26>;
             layers = <3 4>;
         };
 
