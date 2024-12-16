@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &caps_word { continue-list = <DELETE DEL BACKSPACE KP_MINUS SLASH QUESTION SEMICOLON RIGHT_BRACKET SINGLE_QUOTE>; };
 
@@ -131,7 +132,7 @@
 
         weapon_2 {
             bindings = <&kp N2>;
-            key-positions = <24 26>;
+            key-positions = <12 14>;
             layers = <3 4>;
         };
 
@@ -155,6 +156,14 @@
             #binding-cells = <0>;
             bindings = <&kp LA(F4)>;
             label = "ALT_F4";
+        };
+
+        game_vrise_inv_clear: game_vrise_inv_clear {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &mkp RCLK>;
+            label = "GAME_VRISE_INV_CLEAR";
+            wait-ms = <50>;
         };
     };
 
@@ -204,10 +213,10 @@
 
         game_2 {
             bindings = <
-&trans                   &kp N1          &kp N2          &kp DE_N3        &kp DE_N4    &trans  &trans         &trans  &trans  &trans
-&kp DE_DOT    &kp F5     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
-&kp LEFT_ALT  &kp DE_N7  &kp B           &kp O           &kp P            &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
-                                         &kp DE_N6       &none            &trans       &trans  &kp BACKSPACE  &trans
+&game_vrise_inv_clear             &kp N1  &kp N2     &kp DE_N3  &kp DE_N4    &trans  &trans         &trans  &trans  &trans
+&kp DE_DOT             &kp F5     &trans  &trans     &trans     &kp G        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
+&kp LEFT_ALT           &kp DE_N7  &kp B   &kp O      &kp P      &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
+                                          &kp DE_N6  &none      &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
 
