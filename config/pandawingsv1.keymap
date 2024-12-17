@@ -160,10 +160,22 @@
 
         game_vrise_inv_clear: game_vrise_inv_clear {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &mkp RCLK>;
             label = "GAME_VRISE_INV_CLEAR";
-            wait-ms = <50>;
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings 
+              = <&kp R &mkp RCLK &kp E>
+              , <&kp R &mkp RCLK &kp E>
+              , <&kp R &mkp RCLK &kp E>
+              , <&kp R &mkp RCLK &kp E>
+              , <&kp R &mkp RCLK &kp E>
+              , <&kp R &mkp RCLK &kp E>
+              , <&kp R &mkp RCLK &kp E>
+              , <&kp R &mkp RCLK &kp E>
+              , <&kp R &mkp RCLK &kp E>
+              , <&kp R &mkp RCLK &kp E>
+              ;
         };
     };
 
