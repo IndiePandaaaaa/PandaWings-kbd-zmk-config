@@ -162,8 +162,8 @@
             compatible = "zmk,behavior-macro";
             label = "GAME_VRISE_INV_CLEAR";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings 
               = <&kp R &mkp RCLK &kp E>
               , <&kp R &mkp RCLK &kp E>
