@@ -164,18 +164,7 @@
             #binding-cells = <0>;
             wait-ms = <50>;
             tap-ms = <50>;
-            bindings 
-              = <&kp R &mkp RCLK &kp E>
-              , <&kp R &mkp RCLK &kp E>
-              , <&kp R &mkp RCLK &kp E>
-              , <&kp R &mkp RCLK &kp E>
-              , <&kp R &mkp RCLK &kp E>
-              , <&kp R &mkp RCLK &kp E>
-              , <&kp R &mkp RCLK &kp E>
-              , <&kp R &mkp RCLK &kp E>
-              , <&kp R &mkp RCLK &kp E>
-              , <&kp R &mkp RCLK &kp E>
-              ;
+            bindings = <&kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E>;
         };
     };
 
@@ -216,7 +205,7 @@
 
         game {
             bindings = <
-&kp J                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
+&kp G                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
 &kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp T        &kp B      &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
                                       &kp M  &mo 4  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
@@ -227,7 +216,7 @@
             bindings = <
 &game_vrise_inv_clear             &kp N1  &kp N2     &kp DE_N3  &kp DE_N4    &trans  &trans         &trans  &trans  &trans
 &kp DE_DOT             &kp F5     &trans  &trans     &trans     &kp G        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
-&kp LEFT_ALT           &kp DE_N7  &kp B   &kp O      &kp P      &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
+&kp LEFT_ALT           &kp DE_N7  &kp B   &kp J      &kp V      &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
                                           &kp DE_N6  &none      &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
