@@ -171,7 +171,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_qwertz {
+        BASE_QWERTZ {
             //        | SW2  | SW3  | SW4  | SW5  | SW6  |  | SW27 | SW26 | SW25 | SW24 | SW23 | 
             // | SW7  | SW8  | SW9  | SW10 | SW11 | SW12 |  | SW33 | SW32 | SW31 | SW30 | SW29 | SW34 |
             // | SW13 | SW14 | SW15 | SW16 | SW17 | SW18 |  | SW39 | SW38 | SW37 | SW36 | SW35 | SW28 |
@@ -185,7 +185,7 @@
             >;
         };
 
-        numbers_symbols {
+        SYMBOLS_NUMBERS {
             bindings = <
 &kp DE_SECTION                      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND  &kp DE_DOLLAR     &kp DE_PERCENT         &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_CARET
 &kp ESCAPE      &kp DE_AT_SIGN      &kp DE_GRAVE          &kp DE_ACUTE      &kp DE_LESS_THAN  &kp DE_GREATER_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &kp DE_SINGLE_QUOTE
@@ -194,7 +194,7 @@
             >;
         };
 
-        media_navigation {
+        MEDIA_NAVIGATION {
             bindings = <
 &kp F1                      &kp F3        &kp F2        &kp F4            &kp F7            &kp K_PREVIOUS  &kp C_PLAY   &kp C_VOLUME_UP    &kp F8      &kp F9
 &none         &kp F6        &kp F5        &kp F10       &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW       &kp RIGHT   &kp F5      &kp PAGE_UP
@@ -203,7 +203,7 @@
             >;
         };
 
-        game {
+        GAME {
             bindings = <
 &kp G                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
@@ -212,7 +212,7 @@
             >;
         };
 
-        game_2 {
+        GAME_2 {
             bindings = <
 &game_vrise_inv_clear             &kp N1  &kp N2     &kp DE_N3  &kp DE_N4    &trans  &trans         &trans  &trans  &trans
 &kp DE_DOT             &kp F5     &trans  &trans     &trans     &kp G        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
@@ -221,7 +221,7 @@
             >;
         };
 
-        colemakdh {
+        COLEMAKDH {
             bindings = <
 &kp Q                           &kp W           &kp F        &kp P             &kp B           &kp J      &kp L             &kp U               &kp Y           &kp DE_SHARP_S
 &kp ESC         &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G           &kp M      &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &kp TAB
