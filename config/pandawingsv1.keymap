@@ -78,7 +78,7 @@
 
         umlaut_o {
             bindings = <&kp DE_O_UMLAUT>;
-            key-positions = <31 19>;
+            key-positions = <18 30>;
             layers = <0 5>;
         };
 
