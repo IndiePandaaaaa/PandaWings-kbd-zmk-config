@@ -243,7 +243,7 @@
             bindings = <
 &kp F1                        &kp F3              &kp F4                &kp F6                    &kp F7            &kp K_PREVIOUS  &kp C_PLAY       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE
 &bt BT_CLR_ALL  &kp F10       &kp F5              &kp F2                &kp F11                   &kp F12           &kp LEFT_ARROW  &kp DOWN         &kp UP_ARROW       &kp RIGHT        &kp DE_GREATER_THAN  &kp F8
-&kp LEFT_ALT    &bt BT_SEL 0  &kp DE_RIGHT_BRACE  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_PARENTHESIS  &kp DE_SECTION    &kp K_NEXT      &kp DE_A_UMLAUT  &kp DE_O_UMLAUT    &kp DE_U_UMLAUT  &kp PAGE_UP          &kp F9
+&kp LEFT_ALT    &bt BT_SEL 0  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT    &kp DE_U_UMLAUT  &kp DE_SECTION    &kp K_NEXT      &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_BRACE  &kp PAGE_UP          &kp F9
                                                   &trans                &kp LEFT_CONTROL          &kp LEFT_SHIFT    &trans          &trans           &trans
             >;
         };
