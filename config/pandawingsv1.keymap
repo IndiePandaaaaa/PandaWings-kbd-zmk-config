@@ -13,13 +13,13 @@
   flavor = "balanced";
   tapping-term-ms = <200>;
   quick-tap-ms = <QUICK_TAP_MS>;
-}
+};
 
 &mt {
   flavor = "tap-preferred";
   tapping-term-ms = <220>;
   quick-tap-ms = <220>;
-}
+};
 
 &caps_word { continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; };
 
