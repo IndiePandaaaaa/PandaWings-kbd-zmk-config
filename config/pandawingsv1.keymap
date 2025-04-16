@@ -68,40 +68,40 @@
 
         opening_parenthesis {
             bindings = <&kp DE_LEFT_PARENTHESIS>;
-            key-positions = <2 3>;
-            layers = <0 5 6>;
+            key-positions = <13 14>;
+            layers = <1>;
         };
 
         opening_bracket {
             bindings = <&kp DE_LEFT_BRACKET>;
-            key-positions = <1 2>;
-            layers = <0 5 6>;
+            key-positions = <12 13>;
+            layers = <1>;
         };
 
         opening_brace {
             bindings = <&kp DE_LEFT_BRACE>;
-            key-positions = <1 3>;
-            layers = <0 5 6>;
+            key-positions = <14 12>;
+            layers = <1>;
         };
 
         closing_parenthesis {
             bindings = <&kp DE_RIGHT_PARENTHESIS>;
-            key-positions = <6 7>;
-            layers = <0 5 6>;
+            key-positions = <17 18>;
+            layers = <1>;
         };
 
         closing_bracket {
             bindings = <&kp DE_RIGHT_BRACKET>;
-            key-positions = <7 8>;
-            layers = <0 5 6>;
+            key-positions = <18 19>;
+            layers = <1>;
         };
 
         closing_brace {
             bindings = <&kp DE_RIGHT_BRACE>;
-            key-positions = <6 8>;
-            layers = <0 5 6>;
+            key-positions = <17 19>;
+            layers = <1>;
         };
-        
+
         //        umlaut_a {
         //            bindings = <&kp DE_A_UMLAUT>;
         //            key-positions = <29 30>;
@@ -190,6 +190,12 @@
             bindings = <&to 5>;
             key-positions = <21 33>;
             layers = <0 3>;
+        };
+
+        de_sz {
+            bindings = <&kp DE_SZ>;
+            key-positions = <17 19>;
+            layers = <0 5>;
         };
     };
 
