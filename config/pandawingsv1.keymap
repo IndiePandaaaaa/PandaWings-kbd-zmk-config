@@ -108,23 +108,23 @@
 //            key-positions = <12 14>;
 //            layers = <1>;
 //        };
-        //        umlaut_a {
-        //            bindings = <&kp DE_A_UMLAUT>;
-        //            key-positions = <29 30>;
-        //            layers = <0 5 6>;
-        //        };
-        //
-        //        umlaut_o {
-        //            bindings = <&kp DE_O_UMLAUT>;
-        //            key-positions = <30 31>;
-        //            layers = <0 5 6>;
-        //        };
-        //
-        //        umlaut_u {
-        //            bindings = <&kp DE_U_UMLAUT>;
-        //            key-positions = <31 29>;
-        //            layers = <0 5 6>;
-        //        };
+                umlaut_a {
+                    bindings = <&kp DE_A_UMLAUT>;
+                    key-positions = <29 30>;
+                    layers = <0 5>;
+                };
+        
+                umlaut_o {
+                    bindings = <&kp DE_O_UMLAUT>;
+                    key-positions = <30 31>;
+                    layers = <0 5>;
+                };
+        
+                umlaut_u {
+                    bindings = <&kp DE_U_UMLAUT>;
+                    key-positions = <31 29>;
+                    layers = <0 5>;
+                };
 
         de_sz {
             bindings = <&kp DE_SZ>;
