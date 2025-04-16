@@ -84,24 +84,24 @@
             layers = <1>;
         };
 
-        closing_parenthesis {
-            bindings = <&kp DE_RIGHT_PARENTHESIS>;
-            key-positions = <17 18>;
-            layers = <1>;
-        };
-
-        closing_bracket {
-            bindings = <&kp DE_RIGHT_BRACKET>;
-            key-positions = <18 19>;
-            layers = <1>;
-        };
-
-        closing_brace {
-            bindings = <&kp DE_RIGHT_BRACE>;
-            key-positions = <17 19>;
-            layers = <1>;
-        };
-
+//        closing_parenthesis {
+//            bindings = <&kp DE_RIGHT_PARENTHESIS>;
+//            key-positions = <17 18>;
+//            layers = <1>;
+//        };
+//
+//        closing_bracket {
+//            bindings = <&kp DE_RIGHT_BRACKET>;
+//            key-positions = <18 19>;
+//            layers = <1>;
+//        };
+//
+//        closing_brace {
+//            bindings = <&kp DE_RIGHT_BRACE>;
+//            key-positions = <17 19>;
+//            layers = <1>;
+//        };
+//
         //        umlaut_a {
         //            bindings = <&kp DE_A_UMLAUT>;
         //            key-positions = <29 30>;
@@ -119,6 +119,12 @@
         //            key-positions = <31 29>;
         //            layers = <0 5 6>;
         //        };
+
+        de_sz {
+            bindings = <&kp DE_SZ>;
+            key-positions = <17 19>;
+            layers = <0 5>;
+        };
 
         return {
             bindings = <&kp RETURN>;
@@ -190,12 +196,6 @@
             bindings = <&to 5>;
             key-positions = <21 33>;
             layers = <0 3>;
-        };
-
-        de_sz {
-            bindings = <&kp DE_SZ>;
-            key-positions = <17 19>;
-            layers = <0 5>;
         };
     };
 
