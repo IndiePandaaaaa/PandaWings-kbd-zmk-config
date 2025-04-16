@@ -237,18 +237,18 @@
         SYMBOLS_NUMBERS {
             bindings = <
 &kp DE_ACUTE                                &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND     &kp DE_PERCENT           &kp DE_GRAVE        &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_CARET
-&kp ESCAPE              &kp DE_AT_SIGN      &kp DE_LEFT_BRACE     &kp DE_LEFT_BRACKET  &kp DE_LEFT_PARENTHESIS  &kp DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &kp DE_COMMA
-&mt LEFT_GUI DE_DOLLAR  &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH         &kp DE_BACKSLASH         &kp DE_HASH         &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_SINGLE_QUOTE
+&kp ESCAPE              &kp DE_AT_SIGN      &kp DE_LEFT_BRACE     &kp DE_LEFT_BRACKET  &kp DE_LEFT_PARENTHESIS  &kp DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &kp DE_SINGLE_QUOTE
+&mt LEFT_GUI DE_DOLLAR  &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH         &kp DE_BACKSLASH         &kp DE_HASH         &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
                                                                   &trans               &trans                   &trans              &kp BACKSPACE    &kp DE_N0  &kp DE_DOT
             >;
         };
 
         MEDIA_NAVIGATION {
             bindings = <
-&kp F1                        &kp F3           &kp F4           &kp F6            &kp F7            &kp K_PREVIOUS  &kp C_PLAY                &kp C_VOLUME_DOWN     &kp C_VOLUME_UP     &kp K_MUTE
-&bt BT_CLR_ALL  &kp F10       &kp F5           &kp F2           &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN                  &kp UP_ARROW          &kp RIGHT           &kp DE_GREATER_THAN  &kp F8
-&kp LEFT_ALT    &bt BT_SEL 0  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp DE_U_UMLAUT   &kp DE_SECTION    &kp K_NEXT      &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_BRACE  &kp PAGE_UP          &kp F9
-                                               &trans           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &trans          &trans                    &trans
+&kp F1                        &kp F3  &kp F4  &kp F6            &kp F7            &kp K_PREVIOUS  &kp C_PLAY                &kp C_VOLUME_DOWN     &kp C_VOLUME_UP     &kp K_MUTE
+&bt BT_CLR_ALL  &kp F10       &kp F5  &kp F2  &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN                  &kp UP_ARROW          &kp RIGHT           &trans               &kp PAGE_UP
+&kp LEFT_ALT    &bt BT_SEL 0  &kp F8  &kp F9  &trans            &kp DE_SECTION    &kp K_NEXT      &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_BRACE  &kp DE_GREATER_THAN  &kp PAGE_DOWN
+                                      &trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &trans          &trans                    &trans
             >;
         };
 
