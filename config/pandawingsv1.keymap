@@ -102,6 +102,12 @@
 //            layers = <1>;
 //        };
 //
+//
+//        euro_sign {
+//            bindings = <&kp DE_EURO>;
+//            key-positions = <12 14>;
+//            layers = <1>;
+//        };
         //        umlaut_a {
         //            bindings = <&kp DE_A_UMLAUT>;
         //            key-positions = <29 30>;
@@ -130,12 +136,6 @@
             bindings = <&kp RETURN>;
             key-positions = <36 37>;
             layers = <0 5>;
-        };
-
-        euro_sign {
-            bindings = <&kp DE_EURO>;
-            key-positions = <12 14>;
-            layers = <1>;
         };
 
         line_start {
