@@ -8,25 +8,37 @@
 
 // https://github.com/urob/zmk-config#timeless-homerow-mods
 
-#define QUICK_TAP_MS 175
+#define QUICK_TAP_MS 200
+#define TAPPING_TERM 250
+
+&caps_word {
+  continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; 
+};
 
 // &lt &mt from https://github.com/urob/zmk-config/blob/main/config/base.keymap
-
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TAPPING_TERM>;
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
 &mt {
-    flavor = "hold-preferred";
-    tapping-term-ms = <220>;
-    quick-tap-ms = <220>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <TAPPING_TERM>;
+    quick-tap-ms = <QUICK_TAP_MS>;
 };
 
-&caps_word { continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; };
-
 / {
+  behaviors {
+    as: auto_shift {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;""
+      tapping-term-ms = <TAPPING_TERM>;
+      quick-tap-ms = <-1>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    }
+  }
     combos {
         compatible = "zmk,combos";
 
