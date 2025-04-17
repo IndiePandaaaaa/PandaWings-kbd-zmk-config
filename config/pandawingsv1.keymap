@@ -84,47 +84,48 @@
             layers = <1>;
         };
 
-//        closing_parenthesis {
-//            bindings = <&kp DE_RIGHT_PARENTHESIS>;
-//            key-positions = <17 18>;
-//            layers = <1>;
-//        };
-//
-//        closing_bracket {
-//            bindings = <&kp DE_RIGHT_BRACKET>;
-//            key-positions = <18 19>;
-//            layers = <1>;
-//        };
-//
-//        closing_brace {
-//            bindings = <&kp DE_RIGHT_BRACE>;
-//            key-positions = <17 19>;
-//            layers = <1>;
-//        };
-//
-//
-//        euro_sign {
-//            bindings = <&kp DE_EURO>;
-//            key-positions = <12 14>;
-//            layers = <1>;
-//        };
-                umlaut_a {
-                    bindings = <&kp DE_A_UMLAUT>;
-                    key-positions = <29 30>;
-                    layers = <0 5>;
-                };
-        
-                umlaut_o {
-                    bindings = <&kp DE_O_UMLAUT>;
-                    key-positions = <30 31>;
-                    layers = <0 5>;
-                };
-        
-                umlaut_u {
-                    bindings = <&kp DE_U_UMLAUT>;
-                    key-positions = <31 29>;
-                    layers = <0 5>;
-                };
+        //        closing_parenthesis {
+        //            bindings = <&kp DE_RIGHT_PARENTHESIS>;
+        //            key-positions = <17 18>;
+        //            layers = <1>;
+        //        };
+        //
+        //        closing_bracket {
+        //            bindings = <&kp DE_RIGHT_BRACKET>;
+        //            key-positions = <18 19>;
+        //            layers = <1>;
+        //        };
+        //
+        //        closing_brace {
+        //            bindings = <&kp DE_RIGHT_BRACE>;
+        //            key-positions = <17 19>;
+        //            layers = <1>;
+        //        };
+        //
+        //
+        //        euro_sign {
+        //            bindings = <&kp DE_EURO>;
+        //            key-positions = <12 14>;
+        //            layers = <1>;
+        //        };
+
+        umlaut_a {
+            bindings = <&kp DE_A_UMLAUT>;
+            key-positions = <29 30>;
+            layers = <0 5>;
+        };
+
+        umlaut_o {
+            bindings = <&kp DE_O_UMLAUT>;
+            key-positions = <30 31>;
+            layers = <0 5>;
+        };
+
+        umlaut_u {
+            bindings = <&kp DE_U_UMLAUT>;
+            key-positions = <31 29>;
+            layers = <0 5>;
+        };
 
         de_sz {
             bindings = <&kp DE_SZ>;
@@ -227,28 +228,28 @@
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
 
             bindings = <
-&kp Q                                        &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I                &kp O           &kp P
-&mt LCTRL ESCAPE                 &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K   &mt LEFT_ALT L  &mt LGUI DE_O_UMLAUT  &mt LEFT_ALT DE_U_UMLAUT
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y    &kp X           &kp C               &kp V             &kp B           &kp N      &kp M             &kp COMMA            &kp DOT         &kp DE_MINUS          &mt RIGHT_ALT DE_A_UMLAUT
-                                                             &caps_word          &kp SPACE         &lt 1 DELETE    &lt 2 TAB  &kp BACKSPACE     &mt RIGHT_ALT DE_SZ
+&kp Q                                        &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
+&mt LCTRL ESCAPE                 &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SZ  &mt LEFT_ALT SINGLE_QUOTE
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y    &kp X           &kp C               &kp V             &kp B           &kp N      &kp M             &kp COMMA           &kp DOT         &kp DE_MINUS    &mt RIGHT_ALT RETURN
+                                                             &caps_word          &kp SPACE         &lt 1 DELETE    &lt 2 TAB  &kp BACKSPACE     &kp RIGHT_ALT
             >;
         };
 
         SYMBOLS_NUMBERS {
             bindings = <
-&kp DE_ACUTE                                &kp DE_DOUBLE_QUOTES  &kp DE_RIGHT_PARENTHESIS     &kp DE_RIGHT_BRACKET           &kp DE_GRAVE        &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_CARET
-&kp ESCAPE              &kp DE_AT_SIGN      &kp DE_AMPERSAND      &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &kp DE_SINGLE_QUOTE
-&mt LEFT_GUI DE_EURO  &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH         &kp DE_BACKSLASH         &kp DE_HASH         &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
-                                                                  &trans               &trans                   &trans              &kp BACKSPACE    &kp DE_N0  &kp DE_DOT
+&kp DE_ACUTE                              &kp DE_DOUBLE_QUOTES  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACKET  &kp DE_GRAVE        &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_CARET
+&kp ESCAPE            &kp DE_AT_SIGN      &kp DE_AMPERSAND      &kp DE_DOLLAR             &kp DE_PERCENT        &kp DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &kp DE_SINGLE_QUOTE
+&mt LEFT_GUI DE_EURO  &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH              &kp DE_BACKSLASH      &kp DE_HASH         &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
+                                                                &none                     &none                 &none               &kp BACKSPACE    &kp DE_N0  &kp DE_DOT
             >;
         };
 
         MEDIA_NAVIGATION {
             bindings = <
 &kp F1                        &kp F3  &kp F4  &kp F6            &kp F7            &kp K_PREVIOUS  &kp C_PLAY                &kp C_VOLUME_DOWN     &kp C_VOLUME_UP     &kp K_MUTE
-&bt BT_CLR_ALL  &kp F10       &kp F5  &kp F2  &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN                  &kp UP_ARROW          &kp RIGHT           &trans               &kp PAGE_UP
-&kp LEFT_ALT    &bt BT_SEL 0  &kp F8  &kp F9  &trans            &kp DE_SECTION    &kp K_NEXT      &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_BRACE  &kp DE_GREATER_THAN  &kp PAGE_DOWN
-                                      &trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &trans          &trans                    &trans
+&bt BT_CLR_ALL  &kp F10       &kp F5  &kp F2  &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN                  &kp UP_ARROW          &kp RIGHT           &none                &kp PAGE_UP
+&kp LEFT_ALT    &bt BT_SEL 0  &kp F8  &kp F9  &none             &kp DE_SECTION    &kp K_NEXT      &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_BRACE  &kp DE_GREATER_THAN  &kp PAGE_DOWN
+                                      &none   &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none           &none                     &none
             >;
         };
 
@@ -272,9 +273,9 @@
 
         COLEMAKDH {
             bindings = <
-&kp Q                                            &kp W           &kp F        &kp P             &kp B           &kp J      &kp L             &kp U                &kp DE_Z        &kp DE_O_UMLAUT
-&mt LCTRL ESCAPE                 &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G           &kp M      &mt LEFT_SHIFT N  &mt LEFT_CONTROL E   &mt LEFT_ALT I  &mt LEFT_GUI O   &mt LEFT_ALT DE_U_UMLAUT
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y        &kp X           &kp C        &kp D             &kp V           &kp K      &kp H             &kp COMMA            &kp DOT         &kp DE_MINUS     &mt RIGHT_ALT DE_A_UMLAUT
+&kp Q                                            &kp W           &kp F        &kp P             &kp B           &kp J      &kp L             &kp U                &kp DE_Z        &kp DE_SZ
+&mt LCTRL ESCAPE                 &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G           &kp M      &mt LEFT_SHIFT N  &mt LEFT_CONTROL E   &mt LEFT_ALT I  &mt LEFT_GUI O  &mt LEFT_ALT SINGLE_QUOTE
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y        &kp X           &kp C        &kp D             &kp V           &kp K      &kp H             &kp COMMA            &kp DOT         &kp DE_MINUS    &mt RIGHT_ALT RET
                                                                  &caps_word   &kp SPACE         &lt 1 DELETE    &lt 2 TAB  &kp BACKSPACE     &mt RIGHT_ALT DE_SZ
             >;
         };
