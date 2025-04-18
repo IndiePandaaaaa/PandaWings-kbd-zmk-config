@@ -23,7 +23,7 @@
 };
 
 &mt {
-    flavor = "tap-unless-interrupted";
+    flavor = "hold-preferred";
     tapping-term-ms = <TAPPING_TERM>;
     quick-tap-ms = <QUICK_TAP_MS>;
 };
