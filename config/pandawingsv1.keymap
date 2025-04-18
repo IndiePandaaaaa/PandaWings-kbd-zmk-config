@@ -77,31 +77,6 @@
             layers = <0 6>;
         };
 
-        //        closing_parenthesis {
-        //            bindings = <&kp DE_RIGHT_PARENTHESIS>;
-        //            key-positions = <17 18>;
-        //            layers = <1>;
-        //        };
-        //
-        //        closing_bracket {
-        //            bindings = <&kp DE_RIGHT_BRACKET>;
-        //            key-positions = <18 19>;
-        //            layers = <1>;
-        //        };
-        //
-        //        closing_brace {
-        //            bindings = <&kp DE_RIGHT_BRACE>;
-        //            key-positions = <17 19>;
-        //            layers = <1>;
-        //        };
-        //
-        //
-        //        euro_sign {
-        //            bindings = <&kp DE_EURO>;
-        //            key-positions = <12 14>;
-        //            layers = <1>;
-        //        };
-
         umlaut_a {
             bindings = <&as DE_A_UMLAUT>;
             key-positions = <29 30>;
