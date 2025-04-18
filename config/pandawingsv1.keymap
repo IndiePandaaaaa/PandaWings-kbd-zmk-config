@@ -197,7 +197,7 @@
 &kp DE_RIGHT_BRACKET                             &kp DE_DOLLAR      &kp DE_AMPERSAND         &kp DE_PERCENT       &as DE_ACUTE                &kp BACKSPACE    &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
 &kp ESCAPE                   &kp DE_AT_SIGN      &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_PARENTHESIS    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &kp HASH
 &mt LEFT_GUI DE_RIGHT_BRACE  &kp DE_EXCLAMATION  &kp DE_PIPE        &kp KP_SLASH             &kp DE_BACKSLASH     &as DE_LESS_THAN            &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
-                                                                    &none                    &none                &none                       &none            &kp DE_N0  &kp DE_DOT
+                                                                    &none                    &none                &none                       &mo 3            &kp DE_N0  &kp DE_DOT
             >;
         };
 
@@ -247,12 +247,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        MORE_SYMBOLS {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
