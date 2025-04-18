@@ -323,7 +323,7 @@
 &game_vrise_inv_clear                &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4    &trans     &trans  &trans         &trans  &trans
 &kp DE_DOT    &kp F5     &trans     &trans     &trans       &kp I      &trans  &trans         &trans  &trans &trans
 &kp DE_N7              &kp LEFT_ALT  &kp DE_N7  &kp B      &kp J      &kp V        &kp DE_N5  &trans  &trans         &trans  &trans  &trans
-                                                &kp DE_N6  &kp DE_N6  &trans       &trans     &trans  &kp BACKSPACE
+                                                &kp DE_N6  &kp DE_N6  &trans       &trans     &trans  &kp BACKSPACE  &trans
             >;
         };
     };
