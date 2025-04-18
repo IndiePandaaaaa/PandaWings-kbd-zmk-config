@@ -11,11 +11,10 @@
 #define QUICK_TAP_MS 200
 #define TAPPING_TERM 250
 
-&caps_word {
-  continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; 
-};
+&caps_word { continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; };
 
 // &lt &mt from https://github.com/urob/zmk-config/blob/main/config/base.keymap
+
 &lt {
     flavor = "balanced";
     tapping-term-ms = <TAPPING_TERM>;
@@ -30,13 +29,13 @@
 
 / {
     behaviors {
-      as_ht: autoshift_hold_tap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "AUTOSHIFT_HOLD_TAP";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        bindings = <&shifted>, <&kp>;
-      };
+        as_ht: autoshift_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&shifted>, <&kp>;
+        };
     };
 
     combos {
@@ -57,43 +56,25 @@
         select_all {
             bindings = <&kp LC(A)>;
             key-positions = <23 24>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <24 25>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <25 26>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <26 27>;
-            layers = <0 5>;
-        };
-
-        opening_parenthesis {
-            bindings = <&kp DE_LEFT_PARENTHESIS>;
-            key-positions = <13 14>;
-            layers = <1>;
-        };
-
-        opening_bracket {
-            bindings = <&kp DE_LEFT_BRACKET>;
-            key-positions = <12 13>;
-            layers = <1>;
-        };
-
-        opening_brace {
-            bindings = <&kp DE_LEFT_BRACE>;
-            key-positions = <14 12>;
-            layers = <1>;
+            layers = <0 6>;
         };
 
         //        closing_parenthesis {
@@ -122,93 +103,57 @@
         //        };
 
         umlaut_a {
-            bindings = <&kp DE_A_UMLAUT>;
+            bindings = <&as DE_A_UMLAUT>;
             key-positions = <29 30>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         umlaut_o {
-            bindings = <&kp DE_O_UMLAUT>;
+            bindings = <&as DE_O_UMLAUT>;
             key-positions = <30 31>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         umlaut_u {
-            bindings = <&kp DE_U_UMLAUT>;
+            bindings = <&as DE_U_UMLAUT>;
             key-positions = <31 29>;
-            layers = <0 5>;
-        };
-
-        de_sz {
-            bindings = <&kp DE_SZ>;
-            key-positions = <17 19>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         return {
             bindings = <&kp RETURN>;
             key-positions = <36 37>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         line_start {
             bindings = <&kp HOME>;
             key-positions = <12 13 14>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         line_end {
             bindings = <&kp END>;
             key-positions = <17 18 19>;
-            layers = <0 5>;
-        };
-
-        rside_click_left {
-            bindings = <&mkp LCLK>;
-            key-positions = <17 29>;
-            layers = <0 1 2 3 4>;
-        };
-
-        rside_click_middle {
-            bindings = <&mkp MCLK>;
-            key-positions = <18 30>;
-            layers = <0 1 2 3 4>;
-        };
-
-        rside_click_right {
-            bindings = <&mkp RCLK>;
-            key-positions = <19 31>;
-            layers = <0 1 2 3 4>;
-        };
-
-        lside_click_left {
-            bindings = <&mkp LCLK>;
-            key-positions = <26 24>;
-            layers = <0 1 2>;
-        };
-
-        lside_click_middle {
-            bindings = <&mkp MCLK>;
-            key-positions = <26 24 25>;
-            layers = <0 1 2>;
+            layers = <0 6>;
         };
 
         to_base {
             bindings = <&to 0>;
             key-positions = <35 36>;
-            layers = <3 4 1 2 5>;
+            layers = <4 5 1 2 6 3>;
         };
 
         to_game {
-            bindings = <&to 3>;
+            bindings = <&to 4>;
             key-positions = <22 10>;
-            layers = <0>;
+            layers = <0 6>;
         };
 
         to_colemak {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <21 33>;
-            layers = <0 3>;
+            layers = <0 4>;
         };
     };
 
@@ -227,32 +172,31 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = <&kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E>;
-        };    
+        };
 
         shifted: macro_shifted_kp {
             #binding-cells = <1>;
             label = "MACRO_SHIFTED_KP";
             compatible = "zmk,behavior-macro-one-param";
             bindings =
-              <&macro_press &kp LSHFT>,
-              <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
-              <&macro_release &kp LSHFT>;
+                <&macro_press>,
+                <&kp LSHFT &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
-  
+
         as: autoshift {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             label = "AUTOSHIFT_KP";
             bindings =
-              <&macro_press>,
-              <&macro_param_1to1>,
-              <&macro_param_1to2>,
-              <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-              <&macro_pause_for_release>,
-              <&macro_release>,
-              <&macro_param_1to1>,
-              <&macro_param_1to2>,
-              <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+                <&macro_press>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
     };
 
@@ -268,26 +212,35 @@
             bindings = <
 &kp Q                                        &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
 &mt LCTRL ESCAPE                 &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SZ  &mt LEFT_ALT DE_SINGLE_QUOTE
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y    &kp X           &kp C               &kp V             &kp B           &kp N      &kp M             &kp COMMA           &kp DOT         &kp DE_MINUS    &mt RIGHT_ALT RETURN
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y    &kp X           &kp C               &kp V             &kp B           &kp N      &kp M             &as COMMA           &as DOT         &as DE_MINUS    &mt RIGHT_ALT RETURN
                                                              &caps_word          &kp SPACE         &lt 1 DELETE    &lt 2 TAB  &kp BACKSPACE     &kp RIGHT_ALT
             >;
         };
 
         SYMBOLS_NUMBERS {
             bindings = <
-&kp DE_ACUTE                              &kp DE_DOUBLE_QUOTES  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACKET  &kp DE_GRAVE        &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_CARET
-&kp ESCAPE            &kp DE_AT_SIGN      &kp DE_AMPERSAND      &kp DE_DOLLAR             &kp DE_PERCENT        &kp DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &kp DE_SINGLE_QUOTE
-&mt LEFT_GUI DE_EURO  &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH              &kp DE_BACKSLASH      &kp DE_HASH         &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
-                                                                &none                     &none                 &none               &kp BACKSPACE    &kp DE_N0  &kp DE_DOT
+&kp DE_RIGHT_BRACKET                             &kp DE_DOLLAR      &kp DE_AMPERSAND         &kp DE_PERCENT       &as DE_ACUTE                &kp BACKSPACE    &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
+&kp ESCAPE                   &kp DE_AT_SIGN      &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_PARENTHESIS    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &kp HASH
+&mt LEFT_GUI DE_RIGHT_BRACE  &kp DE_EXCLAMATION  &kp DE_PIPE        &kp KP_SLASH             &kp DE_BACKSLASH     &as DE_LESS_THAN            &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
+                                                                    &none                    &none                &none                       &none            &kp DE_N0  &kp DE_DOT
             >;
         };
 
         MEDIA_NAVIGATION {
             bindings = <
-&kp F1                        &kp F3  &kp F4  &kp F6            &kp F7            &kp K_PREVIOUS  &kp C_PLAY                &kp C_VOLUME_DOWN     &kp C_VOLUME_UP     &kp K_MUTE
-&bt BT_CLR_ALL  &kp F10       &kp F5  &kp F2  &kp F11           &kp F12           &kp LEFT_ARROW  &kp DOWN                  &kp UP_ARROW          &kp RIGHT           &none                &kp PAGE_UP
-&kp LEFT_ALT    &bt BT_SEL 0  &kp F8  &kp F9  &none             &kp DE_SECTION    &kp K_NEXT      &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_BRACE  &kp DE_GREATER_THAN  &kp PAGE_DOWN
-                                      &none   &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none           &none                     &none
+&kp F1                      &kp F3  &kp F4  &kp F6        &kp F7            &kp K_PREVIOUS  &kp C_PLAY  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE
+&kp LCTRL     &kp F10       &kp F5  &kp F2  &kp F11       &kp F12           &kp LEFT_ARROW  &kp DOWN    &kp UP_ARROW       &kp RIGHT        &none       &kp PAGE_UP
+&kp LEFT_ALT  &bt BT_SEL 1  &kp F8  &kp F9  &bt BT_SEL 0  &bt BT_CLR_ALL    &kp K_NEXT      &kp K_MENU  &kp K_SCREENSAVER  &kp K_POWER      &none       &kp PAGE_DOWN
+                                    &none   &none         &kp LEFT_SHIFT    &none           &none       &none
+            >;
+        };
+
+        SYMBOLS_MOUSE {
+            bindings = <
+&none         &kp DE_EURO    &kp DE_TILDE   &kp DE_SECTION  &none    &kp RA(DE_Z)    &kp RA(DE_U)      &kp RA(LS(DE_U))  &kp RA(DE_I)     &none
+&none  &none  &mkp MCLK      &mkp LCLK      &mkp RCLK       &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP      &mmv MOVE_RIGHT  &none  &none
+&none  &none  &kp DE_SUPER2  &kp DE_SUPER3  &kp DE_MICRO    &none    &none           &kp RA(LS(DE_C))  &kp RA(LS(DE_R))  &none            &none  &none
+                             &none          &none           &none    &none           &none             &none
             >;
         };
 
@@ -296,7 +249,7 @@
 &kp G                       &kp Q     &kp W  &kp E  &kp R        &kp T      &kp DE_Z  &kp UP          &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
 &kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp T        &kp B      &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
-                                      &kp M  &mo 4  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
+                                      &kp M  &mo 5  &kp SPACE    &kp DE_N5  &kp F12   &kp RETURN
             >;
         };
 
@@ -311,11 +264,20 @@
 
         COLEMAKDH {
             bindings = <
-&kp Q                                            &kp W           &kp F        &kp P             &kp B           &kp J      &kp L             &kp U                &kp DE_Z        &kp DE_SZ
-&mt LCTRL ESCAPE                 &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G           &kp M      &mt LEFT_SHIFT N  &mt LEFT_CONTROL E   &mt LEFT_ALT I  &mt LEFT_GUI O  &mt LEFT_ALT DE_SINGLE_QUOTE
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y        &kp X           &kp C        &kp D             &kp V           &kp K      &kp H             &kp COMMA            &kp DOT         &kp DE_MINUS    &mt RIGHT_ALT RET 
+&kp Q                                            &kp W           &kp F        &kp P             &kp B           &kp J      &kp L             &kp U               &kp DE_Z        &kp DE_SZ
+&mt LCTRL ESCAPE                 &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G           &kp M      &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &mt LEFT_ALT DE_SINGLE_QUOTE
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y        &kp X           &kp C        &kp D             &kp V           &kp K      &kp H             &as COMMA           &as DOT         &as DE_MINUS    &mt RIGHT_ALT RET
                                                                  &caps_word   &kp SPACE         &lt 1 DELETE    &lt 2 TAB  &kp BACKSPACE     &kp RIGHT_ALT
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        MORE_SYMBOLS {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
