@@ -10,20 +10,20 @@
 
 #define QUICK_TAP_MS 200
 #define TAP_DANCE_MS 250
-#define TAPPING_TERM 275
+#define TAPPING_TERM 220
 
 &caps_word { continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; };
 
 // &lt &mt from https://github.com/urob/zmk-config/blob/main/config/base.keymap
-
+// hold-preferred, balanced, tap-preferred
 &lt {
-    flavor = "balanced";
+    flavor = "hold-preferred";
     tapping-term-ms = <TAPPING_TERM>;
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
 &mt {
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
     tapping-term-ms = <TAPPING_TERM>;
     quick-tap-ms = <QUICK_TAP_MS>;
 };
@@ -277,7 +277,7 @@
         KEYBR_CMOS {
             bindings = <
 &cmos_j_x                                        &kp K           &kp U           &kp O         &kp DE_A_UMLAUT        &kp P      &kp B             &kp L          &kp M       &cmos_sz_q
-&mt LCTRL ESCAPE                 &mt LEFT_GUI W  &mt LEFT_ALT H  &mt LCTRL I     &mt LSHIFT E  &kp A                  &kp D      &mt LEFT_SHIFT T  &mt LCTRL N    &mt LALT R  &mt LEFT_GUI S  &mt LEFT_ALT DE_SINGLE_QUOTE
+&mt LCTRL ESCAPE                 &mt LEFT_GUI W  &mt LEFT_ALT H  &mt LCTRL I     &mt LSHIFT E  &kp A                  &kp D      &mt LEFT_SHIFT T  &mt LCTRL N    &mt LALT R  &mt LEFT_GUI S  &mt LEFT_ALT DE_SINGLE_QOTE
 &mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y        &as DE_DOT      &cmos_ue_minus  &as DE_COMMA     &cmos_oe_underscore    &kp G      &kp C             &kp V          &kp DE_Z    &kp F           &mt LGUI RETURN
                                                                  &caps_word      &kp SPACE     &lt 2 DELETE           &lt 3 TAB  &kp BACKSPACE     &kp RIGHT_ALT
             >;
