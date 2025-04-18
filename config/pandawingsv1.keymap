@@ -154,23 +154,23 @@
             layers = <0 1>;
         };
 
-        //        umlaut_a {
-        //            bindings = <&as DE_A_UMLAUT>;
-        //            key-positions = <29 30>;
-        //            layers = <0>;
-        //        };
-        //
-        //        umlaut_o {
-        //            bindings = <&as DE_O_UMLAUT>;
-        //            key-positions = <30 31>;
-        //            layers = <0>;
-        //        };
-        //
-        //        umlaut_u {
-        //            bindings = <&as DE_U_UMLAUT>;
-        //            key-positions = <29 31>;
-        //            layers = <0>;
-        //        };
+                umlaut_a {
+                    bindings = <&as DE_A_UMLAUT>;
+                    key-positions = <29 30>;
+                    layers = <0>;
+                };
+        
+                umlaut_o {
+                    bindings = <&as DE_O_UMLAUT>;
+                    key-positions = <30 31>;
+                    layers = <0>;
+                };
+        
+                umlaut_u {
+                    bindings = <&as DE_U_UMLAUT>;
+                    key-positions = <29 31>;
+                    layers = <0>;
+                };
 
         return {
             bindings = <&kp RETURN>;
