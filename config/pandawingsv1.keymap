@@ -9,7 +9,7 @@
 // https://github.com/urob/zmk-config#timeless-homerow-mods
 
 #define QUICK_TAP_MS 200
-#define TAPPING_TERM 250
+#define TAPPING_TERM 225
 
 &caps_word { continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; };
 
