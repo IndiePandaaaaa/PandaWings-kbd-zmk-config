@@ -135,23 +135,23 @@
             layers = <0 1>;
         };
 
-//        umlaut_a {
-//            bindings = <&as DE_A_UMLAUT>;
-//            key-positions = <29 30>;
-//            layers = <0>;
-//        };
-//
-//        umlaut_o {
-//            bindings = <&as DE_O_UMLAUT>;
-//            key-positions = <30 31>;
-//            layers = <0>;
-//        };
-//
-//        umlaut_u {
-//            bindings = <&as DE_U_UMLAUT>;
-//            key-positions = <29 31>;
-//            layers = <0>;
-//        };
+        //        umlaut_a {
+        //            bindings = <&as DE_A_UMLAUT>;
+        //            key-positions = <29 30>;
+        //            layers = <0>;
+        //        };
+        //
+        //        umlaut_o {
+        //            bindings = <&as DE_O_UMLAUT>;
+        //            key-positions = <30 31>;
+        //            layers = <0>;
+        //        };
+        //
+        //        umlaut_u {
+        //            bindings = <&as DE_U_UMLAUT>;
+        //            key-positions = <29 31>;
+        //            layers = <0>;
+        //        };
 
         return {
             bindings = <&kp RETURN>;
@@ -186,11 +186,11 @@
         to_base {
             bindings = <&to 0>;
             key-positions = <35 36>;
-            layers = <1 2 3 4 5 6>;
+            layers = <1 2 3 4 7 8>;
         };
 
         to_game {
-            bindings = <&to 5>;
+            bindings = <&to 7>;
             key-positions = <22 10>;
             layers = <0 1>;
         };
@@ -198,17 +198,7 @@
         to_cmos {
             bindings = <&to 1>;
             key-positions = <21 33>;
-            layers = <0 5>;
-	};
-
-        to_scroll {
-            bindings = <&mo 7>;
-            key-positions = <31 32 33>;
-        };
-
-        to_sniper {
-            bindings = <&mo 8>;
-            key-positions = <31 32 33 34>;
+            layers = <0 7>;
         };
     };
 
@@ -258,9 +248,9 @@
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
 
             bindings = <
-&qwertz_q_ae                     &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
+&qwertz_q_ae                                 &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
 &mt LCTRL ESCAPE                 &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SZ  &mt LEFT_ALT DE_SINGLE_QUOTE
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y    &qwertz_x_oe           &kp C               &qwertz_v_ue             &kp B           &kp N      &kp M             &as COMMA           &as DOT         &as DE_MINUS    &mt RIGHT_ALT RETURN
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y    &qwertz_x_oe    &kp C               &qwertz_v_ue      &kp B           &kp N      &kp M             &as COMMA           &as DOT         &as DE_MINUS    &mt RIGHT_ALT RETURN
                                                              &caps_word          &kp SPACE         &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE     &kp RIGHT_ALT
             >;
         };
@@ -276,7 +266,7 @@
 
         SYMBOLS_NUMBERS {
             bindings = <
-                       &kp DE_SECTION      &kp DE_DOLLAR  &kp DE_AMPERSAND  &kp DE_PERCENT    &as DE_ACUTE        &kp BACKSPACE    &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
+&kp DE_SECTION                             &kp DE_DOLLAR  &kp DE_AMPERSAND  &kp DE_PERCENT    &as DE_ACUTE        &kp BACKSPACE    &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
 &kp ESCAPE             &kp DE_AT_SIGN      &brace         &parenthesis      &bracket          &as DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as HASH
 &mt LEFT_GUI DE_TILDE  &kp DE_EXCLAMATION  &kp DE_PIPE    &kp KP_SLASH      &kp DE_BACKSLASH  &kp DE_EURO         &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
                                                           &none             &none             &none               &mo 4            &kp DE_N0  &kp DE_DOT
@@ -285,7 +275,7 @@
 
         MEDIA_NAVIGATION {
             bindings = <
-              &kp F1        &kp F3  &kp F4  &kp F6        &kp F7            &kp K_PREVIOUS  &kp C_PLAY  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE
+&kp F1                      &kp F3  &kp F4  &kp F6        &kp F7            &kp K_PREVIOUS  &kp C_PLAY  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE
 &kp LCTRL     &kp F10       &kp F5  &kp F2  &kp F11       &kp F12           &kp LEFT_ARROW  &kp DOWN    &kp UP_ARROW       &kp RIGHT        &none       &kp PAGE_UP
 &kp LEFT_ALT  &bt BT_SEL 1  &kp F8  &kp F9  &bt BT_SEL 0  &bt BT_CLR_ALL    &kp K_NEXT      &kp K_MENU  &kp K_SCREENSAVER  &kp K_POWER      &none       &kp PAGE_DOWN
                                     &none   &none         &kp LEFT_SHIFT    &none           &none       &none
@@ -295,15 +285,33 @@
         SYMBOLS_MOUSE {
             bindings = <
 &none                    &kp DE_EURO    &kp DE_TILDE   &kp DE_SECTION  &none               &kp RA(DE_Z)    &kp RA(DE_U)    &kp RA(LS(DE_U))  &kp RA(DE_I)     &none
-&none  &none             &mkp MCLK      &mkp LCLK      &mkp RCLK       &none               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP      &mmv MOVE_RIGHT  &none  &none
-&none  &kp RA(LS(DE_C))  &kp DE_SUPER2  &kp DE_SUPER3  &kp DE_MICRO    &kp RA(LS(DE_R))    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP      &msc SCRL_RIGHT  &none  &none
+&none  &mo 5             &mkp MCLK      &mkp LCLK      &mkp RCLK       &none               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP      &mmv MOVE_RIGHT  &none  &none
+&mo 6  &kp RA(LS(DE_C))  &kp DE_SUPER2  &kp DE_SUPER3  &kp DE_MICRO    &kp RA(LS(DE_R))    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP      &msc SCRL_RIGHT  &none  &none
                                         &none          &none           &none               &none           &none           &none
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        SNIPER {
+            bindings = <
+&trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         GAME {
             bindings = <
-            &kp G           &kp Q     &kp W  &kp E  &kp R        &kp T       &kp DE_Z  &kp UP          &kp I          &kp O
+&kp G                       &kp Q     &kp W  &kp E  &kp R        &kp T       &kp DE_Z  &kp UP          &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
 &kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp T        &kp B       &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
                                       &kp M  &mo 1  &kp SPACE    &kp RETURN  &kp F12   &none
@@ -312,28 +320,10 @@
 
         GAME_2 {
             bindings = <
-&game_vrise_inv_clear  &kp DE_N1  &kp DE_N2     &kp DE_N3  &kp DE_N4    &trans  &trans     &trans  &trans  &trans  &trans
-&kp DE_DOT    &kp F5     &trans  &trans     &trans     &kp I        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
-&kp LEFT_ALT  &kp DE_N7  &kp B   &kp J      &kp V      &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
-                                 &kp DE_N6  &trans     &trans       &trans  &kp BACKSPACE  &trans
-            >;
-        };
-
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        SNIPER {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&game_vrise_inv_clear                &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4    &trans     &trans  &trans         &trans  &trans
+&trans                 &kp DE_DOT    &kp F5     &trans     &trans     &trans       &kp I      &trans  &trans         &trans  &trans  &trans
+&kp DE_N7              &kp LEFT_ALT  &kp DE_N7  &kp B      &kp J      &kp V        &kp DE_N5  &trans  &trans         &trans  &trans  &trans
+                                                &kp DE_N6  &kp DE_N6  &trans       &trans     &trans  &kp BACKSPACE
             >;
         };
     };
