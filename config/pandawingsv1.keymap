@@ -45,8 +45,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings =
-                <&kp DE_LEFT_td_PARENTHESIS>,
-                <&kp DE_RIGHT_td_PARENTHESIS>;
+                <&kp DE_LEFT_PARENTHESIS>,
+                <&kp DE_RIGHT_PARENTHESIS>;
         };
 
         td_bracket: td_bracket {
@@ -54,7 +54,7 @@
             label = "TD_BRACKET";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp DE_LEFT_td_BRACKET>, <&kp DE_RIGHT_td_BRACKET>;
+            bindings = <&kp DE_LEFT_BRACKET>, <&kp DE_RIGHT_BRACKET>;
         };
 
         td_brace: td_brace {
@@ -62,7 +62,7 @@
             label = "TD_BRACE";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp DE_LEFT_td_BRACE>, <&kp DE_RIGHT_td_BRACE>;
+            bindings = <&kp DE_LEFT_BRACE>, <&kp DE_RIGHT_BRACE>;
         };
 
         td_less_than: td_less_than {
@@ -70,7 +70,7 @@
             label = "TD_LESS_THAN";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp DE_td_LESS_THAN>, <&kp DE_GREATER_THAN>;
+            bindings = <&kp DE_LESS_THAN>, <&kp DE_GREATER_THAN>;
         };
 
         td_cmos_j_x: td_cmos_j_x {
