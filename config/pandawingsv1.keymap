@@ -39,89 +39,89 @@
             bindings = <&shifted>, <&kp>;
         };
 
-        parenthesis: parenthesis {
+        td_parenthesis: td_parenthesis {
             compatible = "zmk,behavior-tap-dance";
-            label = "PARENTHESIS";
+            label = "TD_PARENTHESIS";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp DE_LEFT_PARENTHESIS>, <&kp DE_RIGHT_PARENTHESIS>;
+            bindings = <&kp DE_LEFT_td_PARENTHESIS>, <&kp DE_RIGHT_td_PARENTHESIS>;
         };
 
-        bracket: bracket {
+        td_bracket: td_bracket {
             compatible = "zmk,behavior-tap-dance";
-            label = "BRACKET";
+            label = "TD_BRACKET";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp DE_LEFT_BRACKET>, <&kp DE_RIGHT_BRACKET>;
+            bindings = <&kp DE_LEFT_td_BRACKET>, <&kp DE_RIGHT_td_BRACKET>;
         };
 
-        brace: brace {
+        td_brace: td_brace {
             compatible = "zmk,behavior-tap-dance";
-            label = "BRACE";
+            label = "TD_BRACE";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp DE_LEFT_BRACE>, <&kp DE_RIGHT_BRACE>;
+            bindings = <&kp DE_LEFT_td_BRACE>, <&kp DE_RIGHT_td_BRACE>;
         };
 
-        less_than: less_than {
+        td_less_than: td_less_than {
             compatible = "zmk,behavior-tap-dance";
-            label = "LESS_THAN";
+            label = "TD_LESS_THAN";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp DE_LESS_THAN>, <&kp DE_GREATER_THAN>;
+            bindings = <&kp DE_td_LESS_THAN>, <&kp DE_GREATER_THAN>;
         };
 
-        cmos_j_x: cmos_j_x {
+        td_cmos_j_x: td_cmos_j_x {
             compatible = "zmk,behavior-tap-dance";
-            label = "CMOS_J_X";
+            label = "TD_CMOS_J_X";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings = <&kp J>, <&kp X>;
         };
 
-        cmos_sz_q: cmos_sz_q {
+        td_cmos_sz_q: td_cmos_sz_q {
             compatible = "zmk,behavior-tap-dance";
-            label = "CMOS_SZ_Q";
+            label = "TD_CMOS_SZ_Q";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings = <&kp DE_SZ>, <&kp Q>;
         };
 
-        cmos_ue_minus: cmos_umlaut_u_minus {
+        td_cmos_ue_minus: td_cmos_umlaut_u_minus {
             compatible = "zmk,behavior-tap-dance";
-            label = "CMOS_UE_MINUS";
+            label = "TD_CMOS_UE_MINUS";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings = <&kp DE_U_UMLAUT>, <&kp KP_MINUS>;
         };
 
-        cmos_oe_underscore: cmos_umlaut_o_underscore {
+        td_cmos_oe_underscore: td_cmos_umlaut_o_underscore {
             compatible = "zmk,behavior-tap-dance";
-            label = "CMOS_OE_UNDERSCORE";
+            label = "TD_CMOS_OE_UNDERSCORE";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings = <&kp DE_O_UMLAUT>, <&kp DE_UNDERSCORE>;
         };
 
-        qwertz_v_ue: qwertz_v_ue {
+        td_qwertz_v_ue: td_qwertz_v_ue {
             compatible = "zmk,behavior-tap-dance";
-            label = "QWERTZ_V_UE";
+            label = "TD_QWERTZ_V_UE";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings = <&kp DE_U_UMLAUT>, <&kp V>;
         };
 
-        qwertz_y_ae: qwertz_y_ae {
+        td_qwertz_y_ae: td_qwertz_y_ae {
             compatible = "zmk,behavior-tap-dance";
-            label = "QWERTZ_Y_AE";
+            label = "TD_QWERTZ_Y_AE";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings = <&kp DE_A_UMLAUT>, <&kp DE_Y>;
         };
 
-        qwertz_x_oe: qwertz_x_oe {
+        td_qwertz_x_oe: td_qwertz_x_oe {
             compatible = "zmk,behavior-tap-dance";
-            label = "QWERTZ_X_OE";
+            label = "TD_QWERTZ_X_OE";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings = <&kp DE_O_UMLAUT>, <&kp X>;
@@ -251,10 +251,10 @@
             label = "AUTOSHIFT_KP";
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_param_1to1 &macro_param_1to2 &ht_as MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+                <&macro_param_1to1 &macro_param_1to2 &ht_as MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
     };
 
@@ -270,16 +270,16 @@
             bindings = <
 &kp Q                                          &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
 &mt LCTRL ESCAPE                 &mt LGUI A    &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SZ  &mt LEFT_ALT DE_SINGLE_QUOTE
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &qwertz_y_ae  &qwertz_x_oe    &kp C               &qwertz_v_ue      &kp B           &kp N      &kp M             &as DE_COMMA        &as DE_DOT      &as DE_MINUS    &mt RIGHT_ALT RETURN
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &td_qwertz_y_ae  &td_qwertz_x_oe    &kp C               &td_qwertz_v_ue      &kp B           &kp N      &kp M             &as DE_COMMA        &as DE_DOT      &as DE_MINUS    &mt RIGHT_ALT RETURN
                                                                &kp LEFT_WIN        &kp SPACE         &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE     &caps_word
             >;
         };
 
         KEYBR_CMOS {
             bindings = <
-&cmos_j_x                                        &kp K           &kp U           &kp O         &kp DE_A_UMLAUT        &kp P      &kp B             &kp L          &kp M       &cmos_sz_q
+&td_cmos_j_x                                        &kp K           &kp U           &kp O         &kp DE_A_UMLAUT        &kp P      &kp B             &kp L          &kp M       &td_cmos_sz_q
 &mt LCTRL ESCAPE                 &mt LEFT_GUI W  &mt LEFT_ALT H  &mt LCTRL I     &mt LSHIFT E  &kp A                  &kp D      &mt LEFT_SHIFT T  &mt LCTRL N    &mt LALT R  &mt LEFT_GUI S  &mt LEFT_ALT DE_SINGLE_QUOTE
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y        &as DE_DOT      &cmos_ue_minus  &as DE_COMMA  &cmos_oe_underscore    &kp G      &kp C             &kp V          &kp DE_Z    &kp F           &mt LGUI RETURN
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y        &as DE_DOT      &td_cmos_ue_minus  &as DE_COMMA  &td_cmos_oe_underscore    &kp G      &kp C             &kp V          &kp DE_Z    &kp F           &mt LGUI RETURN
                                                                  &caps_word      &kp SPACE     &lt 2 DELETE           &lt 3 TAB  &kp BACKSPACE     &kp RIGHT_ALT
             >;
         };
@@ -287,7 +287,7 @@
         SYMBOLS_NUMBERS {
             bindings = <
 &kp DE_SECTION                             &kp DE_DOLLAR  &kp DE_AMPERSAND  &kp DE_PERCENT    &as DE_ACUTE    &kp BACKSPACE    &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
-&kp ESCAPE             &kp DE_AT_SIGN      &brace         &parenthesis      &bracket          &less_than      &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
+&kp ESCAPE             &kp DE_AT_SIGN      &td_brace         &td_parenthesis      &td_bracket          &td_less_than      &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
 &mt LEFT_GUI DE_TILDE  &kp DE_EXCLAMATION  &kp DE_PIPE    &kp KP_SLASH      &kp DE_BACKSLASH  &kp DE_EURO     &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
                                                           &none             &none             &none           &mo 4            &kp DE_N0  &kp DE_DOT
             >;
