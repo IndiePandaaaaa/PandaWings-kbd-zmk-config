@@ -16,6 +16,7 @@
 
 // &lt &mt from https://github.com/urob/zmk-config/blob/main/config/base.keymap
 // hold-preferred, balanced, tap-preferred, tap-unless-interrupted
+
 &lt {
     flavor = "hold-preferred";
     tapping-term-ms = <TAPPING_TERM>;
@@ -23,7 +24,7 @@
 };
 
 &mt {
-    flavor = "hold-preferred";
+    flavor = "tap-unless-interrupted";
     tapping-term-ms = <TAPPING_TERM>;
     quick-tap-ms = <QUICK_TAP_MS>;
 };
@@ -107,15 +108,15 @@
             label = "QWERTZ_V_UE";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp V>, <&kp DE_U_UMLAUT>;
+            bindings = <&kp DE_U_UMLAUT>, <&kp V>;
         };
 
-        qwertz_q_ae: qwertz_q_ae {
+        qwertz_y_ae: qwertz_y_ae {
             compatible = "zmk,behavior-tap-dance";
-            label = "QWERTZ_Q_AE";
+            label = "QWERTZ_Y_AE";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp Q>, <&kp DE_A_UMLAUT>;
+            bindings = <&kp DE_A_UMLAUT>, <&kp DE_Y>;
         };
 
         qwertz_x_oe: qwertz_x_oe {
@@ -123,7 +124,7 @@
             label = "QWERTZ_X_OE";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_DANCE_MS>;
-            bindings = <&kp X>, <&kp DE_O_UMLAUT>;
+            bindings = <&kp DE_O_UMLAUT>, <&kp X>;
         };
     };
 
@@ -154,23 +155,23 @@
             layers = <0 1>;
         };
 
-                umlaut_a {
-                    bindings = <&as DE_A_UMLAUT>;
-                    key-positions = <29 30>;
-                    layers = <0>;
-                };
-        
-                umlaut_o {
-                    bindings = <&as DE_O_UMLAUT>;
-                    key-positions = <30 31>;
-                    layers = <0>;
-                };
-        
-                umlaut_u {
-                    bindings = <&as DE_U_UMLAUT>;
-                    key-positions = <29 31>;
-                    layers = <0>;
-                };
+        umlaut_a {
+            bindings = <&as DE_A_UMLAUT>;
+            key-positions = <29 30>;
+            layers = <0>;
+        };
+
+        umlaut_o {
+            bindings = <&as DE_O_UMLAUT>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        umlaut_u {
+            bindings = <&as DE_U_UMLAUT>;
+            key-positions = <29 31>;
+            layers = <0>;
+        };
 
         return {
             bindings = <&kp RETURN>;
@@ -213,13 +214,13 @@
             key-positions = <21 33>;
             layers = <0 7>;
         };
- 
+
         to_game {
             bindings = <&to 7>;
             key-positions = <22 10>;
             layers = <0 1>;
         };
-   };
+    };
 
     macros {
         game_vrise_inv_clear: game_vrise_inv_clear {
@@ -267,10 +268,10 @@
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
 
             bindings = <
-&qwertz_q_ae                                 &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
-&mt LCTRL ESCAPE                 &mt LGUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SZ  &mt LEFT_ALT DE_SINGLE_QUOTE
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y    &qwertz_x_oe    &kp C               &qwertz_v_ue      &kp B           &kp N      &kp M             &as DE_COMMA           &as DE_DOT         &as DE_MINUS    &mt RIGHT_ALT RETURN
-                                                             &caps_word          &kp SPACE         &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE     &kp RIGHT_ALT
+&kp Q                                          &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
+&mt LCTRL ESCAPE                 &mt LGUI A    &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SZ  &mt LEFT_ALT DE_SINGLE_QUOTE
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &qwertz_y_ae  &qwertz_x_oe    &kp C               &qwertz_v_ue      &kp B           &kp N      &kp M             &as DE_COMMA        &as DE_DOT      &as DE_MINUS    &mt RIGHT_ALT RETURN
+                                                               &kp LEFT_WIN        &kp SPACE         &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE     &caps_word
             >;
         };
 
@@ -278,17 +279,17 @@
             bindings = <
 &cmos_j_x                                        &kp K           &kp U           &kp O         &kp DE_A_UMLAUT        &kp P      &kp B             &kp L          &kp M       &cmos_sz_q
 &mt LCTRL ESCAPE                 &mt LEFT_GUI W  &mt LEFT_ALT H  &mt LCTRL I     &mt LSHIFT E  &kp A                  &kp D      &mt LEFT_SHIFT T  &mt LCTRL N    &mt LALT R  &mt LEFT_GUI S  &mt LEFT_ALT DE_SINGLE_QUOTE
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y        &as DE_DOT      &cmos_ue_minus  &as DE_COMMA     &cmos_oe_underscore    &kp G      &kp C             &kp V          &kp DE_Z    &kp F           &mt LGUI RETURN
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y        &as DE_DOT      &cmos_ue_minus  &as DE_COMMA  &cmos_oe_underscore    &kp G      &kp C             &kp V          &kp DE_Z    &kp F           &mt LGUI RETURN
                                                                  &caps_word      &kp SPACE     &lt 2 DELETE           &lt 3 TAB  &kp BACKSPACE     &kp RIGHT_ALT
             >;
         };
 
         SYMBOLS_NUMBERS {
             bindings = <
-&kp DE_SECTION                             &kp DE_DOLLAR  &kp DE_AMPERSAND  &kp DE_PERCENT    &as DE_ACUTE        &kp BACKSPACE    &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
-&kp ESCAPE             &kp DE_AT_SIGN      &brace         &parenthesis      &bracket          &less_than          &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
-&mt LEFT_GUI DE_TILDE  &kp DE_EXCLAMATION  &kp DE_PIPE    &kp KP_SLASH      &kp DE_BACKSLASH  &kp DE_EURO         &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
-                                                          &none             &none             &none               &mo 4            &kp DE_N0  &kp DE_DOT
+&kp DE_SECTION                             &kp DE_DOLLAR  &kp DE_AMPERSAND  &kp DE_PERCENT    &as DE_ACUTE    &kp BACKSPACE    &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
+&kp ESCAPE             &kp DE_AT_SIGN      &brace         &parenthesis      &bracket          &less_than      &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
+&mt LEFT_GUI DE_TILDE  &kp DE_EXCLAMATION  &kp DE_PIPE    &kp KP_SLASH      &kp DE_BACKSLASH  &kp DE_EURO     &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
+                                                          &none             &none             &none           &mo 4            &kp DE_N0  &kp DE_DOT
             >;
         };
 
@@ -333,16 +334,16 @@
 &kp G                       &kp Q     &kp W  &kp E  &kp R        &kp T       &kp DE_Z  &kp UP          &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
 &kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp T        &kp B       &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
-                                      &kp M  &mo 1  &kp SPACE    &kp RETURN  &kp F12   &none
+                                      &kp M  &mo 8  &kp SPACE    &kp RETURN  &kp F12   &none
             >;
         };
 
         GAME_2 {
             bindings = <
-&game_vrise_inv_clear                &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4    &trans     &trans  &trans         &trans  &trans
-&kp DE_DOT    &kp F5     &trans     &trans     &trans       &kp I      &trans  &trans         &trans  &trans &trans
-&kp DE_N7              &kp LEFT_ALT  &kp DE_N7  &kp B      &kp J      &kp V        &kp DE_N5  &trans  &trans         &trans  &trans  &trans
-                                                &kp DE_N6  &kp DE_N6  &trans       &trans     &trans  &kp BACKSPACE  &trans
+&game_vrise_inv_clear             &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4    &trans  &trans         &trans  &trans  &trans
+&kp DE_DOT             &kp F5     &trans     &trans     &trans     &kp I        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
+&kp LEFT_ALT           &kp DE_N7  &kp B      &kp J      &kp V      &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
+                                             &kp DE_N6  &trans     &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
     };
