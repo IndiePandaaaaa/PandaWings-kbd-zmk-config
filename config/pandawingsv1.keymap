@@ -126,6 +126,14 @@
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings = <&kp DE_O_UMLAUT>, <&kp X>;
         };
+
+        td_modifier: td_modifier {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MODIFIER";
+            #binding-cells = <0>;
+            tapping-term-ms = <TAP_DANCE_MS>;
+            bindings = <&kp LGUI>, <&kp LCTRL>, <&kp LSHIFT>;
+        };
     };
 
     combos {
@@ -271,7 +279,7 @@
 &kp Q                                          &kp W           &kp E               &kp R             &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
 &mt LCTRL ESCAPE                 &mt LGUI A    &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LGUI DE_SZ  &mt LEFT_ALT DE_SINGLE_QUOTE
 &mt LEFT_SHIFT DE_DOUBLE_QUOTES  &td_qwertz_y_ae  &td_qwertz_x_oe    &kp C               &td_qwertz_v_ue      &kp B           &kp N      &kp M             &as DE_COMMA        &as DE_DOT      &as DE_MINUS    &mt RIGHT_ALT RETURN
-                                                               &kp LEFT_WIN        &kp SPACE         &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE     &caps_word
+                                                               &td_modifier        &kp SPACE         &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE     &caps_word
             >;
         };
 
