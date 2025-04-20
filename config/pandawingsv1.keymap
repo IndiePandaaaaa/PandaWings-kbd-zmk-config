@@ -31,7 +31,7 @@
 
 / {
     behaviors {
-        as_ht: autoshift_hold_tap {
+        ht_as: autoshift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
