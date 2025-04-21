@@ -8,9 +8,12 @@
 
 // https://github.com/urob/zmk-config#timeless-homerow-mods
 
+#define PRIOR_IDLE 175
+
 #define QUICK_TAP_MS 200
-#define TAP_DANCE_MS 250
-#define TAPPING_TERM 220
+#define TAPPING_TERM 225
+#define HRM_TAP_TERM 275
+#define TAP_DANCE_MS 300
 
 &caps_word { continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; };
 
@@ -37,6 +40,49 @@
             #binding-cells = <2>;
             tapping-term-ms = <QUICK_TAP_MS>;
             bindings = <&shifted>, <&kp>;
+        };
+
+
+        hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <HRM_TAP_TERM>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <PRIOR_IDLE>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 37 38 39>;
+        };
+
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <HRM_TAP_TERM>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <PRIOR_IDLE>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36>;
+            hold-trigger-on-release;
+        };
+
+        td_modifier: td_modifier {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MODIFIER";
+            #binding-cells = <0>;
+            tapping-term-ms = <TAP_DANCE_MS>;
+            bindings = <&kp LGUI>, <&kp LCTRL>, <&kp LSHIFT>;
+        };
+
+        td_quotes: td_quotes {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_QUOTES";
+            #binding-cells = <0>;
+            bindings = <&kp DE_DOUBLE_QUOTES>, <&kp DE_SINGLE_QUOTE>;
+            tapping-term-ms = <TAP_DANCE_MS>;
         };
 
         td_parenthesis: td_parenthesis {
@@ -102,51 +148,6 @@
             tapping-term-ms = <TAP_DANCE_MS>;
             bindings = <&kp DE_O_UMLAUT>, <&kp DE_UNDERSCORE>;
         };
-
-        td_modifier: td_modifier {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_MODIFIER";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp LGUI>, <&kp LCTRL>, <&kp LSHIFT>;
-        };
-
-        hml: home_row_mod_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HML";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 37 38 39>;
-        };
-
-        hmr: home_row_mod_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36>;
-            hold-trigger-on-release;
-        };
-
-        td_quotes: td_quotes {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_QUOTES";
-            #binding-cells = <0>;
-            bindings = <&kp DE_DOUBLE_QUOTES>, <&kp DE_SINGLE_QUOTE>;
-
-            tapping-term-ms = <250>;
-        };
     };
 
     combos {
@@ -176,22 +177,27 @@
             layers = <0 1>;
         };
 
-        umlaut_a {
-            bindings = <&as DE_A_UMLAUT>;
-            key-positions = <29 30>;
-            layers = <0>;
-        };
+//        umlaut_a {
+//            bindings = <&as DE_A_UMLAUT>;
+//            key-positions = <29 30>;
+//            layers = <0>;
+//        };
+//
+//        umlaut_o {
+//            bindings = <&as DE_O_UMLAUT>;
+//            key-positions = <30 31>;
+//            layers = <0>;
+//        };
+//
+//        umlaut_u {
+//            bindings = <&as DE_U_UMLAUT>;
+//            key-positions = <29 31>;
+//            layers = <0>;
+//        };
 
-        umlaut_o {
-            bindings = <&as DE_O_UMLAUT>;
-            key-positions = <30 31>;
-            layers = <0>;
-        };
-
-        umlaut_u {
-            bindings = <&as DE_U_UMLAUT>;
-            key-positions = <29 31>;
-            layers = <0>;
+        de_sz {
+            bindings = <&as DE_SZ>;
+            key-positions = <29 31 30>;
         };
 
         return {
@@ -240,11 +246,6 @@
             bindings = <&to 7>;
             key-positions = <22 10>;
             layers = <0 1>;
-        };
-
-        de_sz {
-            bindings = <&as DE_SZ>;
-            key-positions = <29 31 30>;
         };
     };
 
