@@ -303,10 +303,10 @@
 
         KEYBR_CMOS {
             bindings = <
-&td_cmos_j_x                                      &kp K       &kp U              &kp O          &kp DE_A_UMLAUT           &kp P      &kp B              &kp L          &kp M     &td_cmos_sz_q
-&mt LEFT_ALT ESCAPE              &hml LEFT_GUI W  &kp H       &hml LCTRL I       &hml LSHIFT E  &kp A                     &kp D      &hmr LEFT_SHIFT T  &hmr LCTRL N   &kp R     &hmr LEFT_GUI S  &mt LEFT_ALT DE_SINGLE_QUOTE
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y         &as DE_DOT  &td_cmos_ue_minus  &as DE_COMMA   &td_cmos_oe_underscore    &kp G      &kp C              &kp V          &kp DE_Z  &kp F            &mt LGUI RETURN
-                                                              &caps_word         &kp SPACE      &lt 2 DELETE              &lt 3 TAB  &kp BACKSPACE      &kp RIGHT_ALT
+&td_cmos_j_x                                      &kp K       &kp U              &kp O          &kp DE_A_UMLAUT           &kp P      &kp B              &kp L         &kp M     &td_cmos_sz_q
+&mt LEFT_ALT ESCAPE              &hml LEFT_GUI W  &kp H       &hml LCTRL I       &hml LSHIFT E  &kp A                     &kp D      &hmr LEFT_SHIFT T  &hmr LCTRL N  &kp R     &hmr LEFT_GUI S  &mt LEFT_ALT DE_SINGLE_QUOTE
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y         &as DE_DOT  &td_cmos_ue_minus  &as DE_COMMA   &td_cmos_oe_underscore    &kp G      &kp C              &kp V         &kp DE_Z  &kp F            &mt RALT RETURN
+                                                              &td_modifier       &kp SPACE      &lt 2 DELETE              &lt 3 TAB  &kp BACKSPACE      &caps_word
             >;
         };
 
