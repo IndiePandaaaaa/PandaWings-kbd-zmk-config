@@ -320,10 +320,10 @@
 
         SYMBOLS_NUMBERS {
             bindings = <
-&kp DE_SECTION                             &kp DE_DOLLAR  &kp DE_AMPERSAND  &kp DE_PERCENT    &as DE_ACUTE     &kp BACKSPACE    &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
-&kp ESCAPE             &kp DE_AT_SIGN      &td_brace      &td_parenthesis   &td_bracket       &td_less_than    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
-&mt LEFT_GUI DE_TILDE  &kp DE_EXCLAMATION  &kp DE_PIPE    &kp KP_SLASH      &kp DE_BACKSLASH  &kp DE_EURO      &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
-                                                          &none             &none             &none            &mo 4            &kp DE_N0  &kp DE_DOT
+&kp DE_SECTION                              &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND  &kp DE_PERCENT    &as DE_ACUTE     &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
+&kp ESCAPE              &kp DE_AT_SIGN      &td_brace             &td_parenthesis   &td_bracket       &td_less_than    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
+&mt LEFT_GUI DE_DOLLAR  &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH      &kp DE_BACKSLASH  &kp DE_GRAVE     &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COMMA
+                                                                  &none             &none             &none            &mo 4            &kp DE_N0  &kp DE_DOT
             >;
         };
 
