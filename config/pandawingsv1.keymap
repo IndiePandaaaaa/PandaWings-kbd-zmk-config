@@ -302,10 +302,10 @@
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
 
             bindings = <
-&kp Q                             &kp W  &kp E                &kp R              &kp T           &kp DE_Z   &kp U              &kp I                &kp O       &kp P
-&mt LEFT_ALT ESCAPE  &hml LGUI A  &kp S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G           &kp H      &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &kp L       &hmr LGUI DE_O_UMLAUT  &mt LEFT_ALT DE_U_UMLAUT
-&td_quotes           &kp DE_Y     &kp X  &kp C                &kp V              &kp B           &kp N      &kp M              &as DE_COMMA         &as DE_DOT  &as DE_MINUS           &mt RIGHT_ALT DE_A_UMLAUT
-                                         &td_modifier         &kp SPACE          &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE      &as DE_SZ
+&kp Q                              &kp W  &kp E                       &kp R              &kp T           &kp DE_Z   &kp U              &kp I                &kp O       &kp P
+&mt LEFT_WIN ESCAPE   &hml LGUI A  &kp S  &hml LEFT_CONTROL D         &hml LEFT_SHIFT F  &kp G           &kp H      &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &kp L       &hmr LGUI DE_O_UMLAUT  &mt LEFT_ALT DE_U_UMLAUT
+&mt LEFT_SHIFT DE_SZ  &kp DE_Y     &kp X  &kp C                       &kp V              &kp B           &kp N      &kp M              &as DE_COMMA         &as DE_DOT  &as DE_MINUS           &mt RIGHT_ALT DE_A_UMLAUT
+                                          &mt LCTRL DE_DOUBLE_QUOTES  &kp SPACE          &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE      &as DE_SZ
             >;
         };
 
