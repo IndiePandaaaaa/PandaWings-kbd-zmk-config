@@ -11,7 +11,7 @@
 #define PRIOR_IDLE 100   // 125
 #define QUICK_TAP_MS 175 // 200
 #define TAPPING_TERM 200 // 225
-#define HRM_TAP_TERM 275 
+#define HRM_TAP_TERM 275
 #define TAP_DANCE_MS 300
 
 &caps_word { continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; };
@@ -52,7 +52,7 @@
             require-prior-idle-ms = <PRIOR_IDLE>;
             flavor = "tap-unless-interrupted";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 22 10 0 1 2 3 4 15 12 23 24 25 26 27 39>;
+            hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 22 10 0 1 2 3 4 15 23 24 25 26 27 39>;
         };
 
         hmr: home_row_mod_right {
@@ -66,7 +66,7 @@
             require-prior-idle-ms = <PRIOR_IDLE>;
             flavor = "tap-unless-interrupted";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 5 6 7 8 9 16 19 21 28 29 30 31 32 33 39>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 5 6 7 8 9 16 21 28 29 30 31 32 33 39>;
         };
 
         td_modifier: td_modifier {
@@ -279,10 +279,10 @@
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
 
             bindings = <
-&kp Q                              &kp W  &kp E                       &kp R              &kp T           &kp DE_Z   &kp U              &kp I                &kp O       &kp P
-&mt LEFT_WIN ESCAPE   &hml LGUI A  &kp S  &hml LEFT_CONTROL D         &hml LEFT_SHIFT F  &kp G           &kp H      &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &kp L       &hmr LGUI DE_O_UMLAUT  &mt LEFT_ALT DE_U_UMLAUT
-&mt LEFT_SHIFT DE_SZ  &kp DE_Y     &kp X  &kp C                       &kp V              &kp B           &kp N      &kp M              &as DE_COMMA         &as DE_DOT  &as DE_MINUS           &mt RIGHT_ALT DE_A_UMLAUT
-                                          &mt LCTRL DE_DOUBLE_QUOTES  &kp SPACE          &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE      &as DE_SZ
+&kp Q                                         &kp W            &kp E                &kp R              &kp T           &kp DE_Z   &kp U              &kp I                &kp O            &kp P
+&mt LEFT_WIN ESCAPE              &hml LGUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G           &kp H      &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LGUI DE_O_UMLAUT  &mt LEFT_ALT DE_U_UMLAUT
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y     &kp X            &kp C                &kp V              &kp B           &kp N      &kp M              &as DE_COMMA         &as DE_DOT       &as DE_MINUS           &mt RIGHT_ALT DE_A_UMLAUT
+                                                               &kp LCTRL            &kp SPACE          &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE      &as DE_SZ
             >;
         };
 
