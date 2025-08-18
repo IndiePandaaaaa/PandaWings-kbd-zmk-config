@@ -8,10 +8,10 @@
 
 // https://github.com/urob/zmk-config#timeless-homerow-mods
 
-#define PRIOR_IDLE 125
-#define QUICK_TAP_MS 200
-#define TAPPING_TERM 225
-#define HRM_TAP_TERM 275
+#define PRIOR_IDLE 100   // 125
+#define QUICK_TAP_MS 175 // 200
+#define TAPPING_TERM 200 // 225
+#define HRM_TAP_TERM 275 
 #define TAP_DANCE_MS 300
 
 &caps_word { continue-list = <DELETE DEL BACKSPACE MINUS KP_MINUS SLASH QUESTION SEMICOLON LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; };
@@ -177,29 +177,6 @@
             key-positions = <26 27>;
             layers = <0 1>;
         };
-
-        //        umlaut_a {
-        //            bindings = <&as DE_A_UMLAUT>;
-        //            key-positions = <29 30>;
-        //            layers = <0>;
-        //        };
-        //
-        //        umlaut_o {
-        //            bindings = <&as DE_O_UMLAUT>;
-        //            key-positions = <30 31>;
-        //            layers = <0>;
-        //        };
-        //
-        //        umlaut_u {
-        //            bindings = <&as DE_U_UMLAUT>;
-        //            key-positions = <29 31>;
-        //            layers = <0>;
-        //        };
-        //
-        //        de_sz {
-        //            bindings = <&as DE_SZ>;
-        //            key-positions = <21 22>;
-        //        };
 
         caps_word {
             bindings = <&caps_word>;
