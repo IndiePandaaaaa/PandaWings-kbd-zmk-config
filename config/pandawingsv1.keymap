@@ -254,7 +254,7 @@
 
         GAME {
             bindings = <
-&kp G                       &kp Q     &kp W  &kp E  &kp R        &kp T       &kp DE_Z  &kp UP          &kp I          &kp O
+&kp V                       &kp Q     &kp W  &kp E  &kp R        &kp T       &kp DE_Z  &kp UP          &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
 &kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp T        &kp B       &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
                                       &kp M  &mo 8  &kp SPACE    &kp RETURN  &kp F12   &none
@@ -263,9 +263,9 @@
 
         GAME_2 {
             bindings = <
-&game_vrise_inv_clear             &kp DE_N1  &none      &kp DE_N4  &kp DE_N1    &trans  &trans         &trans  &trans  &trans
-&kp DE_DOT             &kp F5     &kp DE_N2  &none      &kp DE_N3  &kp I        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
-&kp LEFT_ALT           &kp DE_N7  &kp B      &kp J      &kp V      &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
+&game_vrise_inv_clear             &kp DE_N2  &none      &kp DE_N4  &kp DE_N1    &trans  &trans         &trans  &trans  &trans
+&kp DE_DOT             &kp F5     &kp DE_N1  &none      &kp DE_N3  &kp I        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
+&kp LEFT_ALT           &kp DE_N7  &kp B      &kp J      &kp G      &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
                                              &kp DE_N6  &trans     &trans       &trans  &kp BACKSPACE  &trans
             >;
         };
