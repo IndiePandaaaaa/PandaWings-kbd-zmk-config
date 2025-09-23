@@ -220,7 +220,7 @@
             layers = <1 2 3 4 7 8 5 6>;
         };
 
-        to_cmos {
+        to_noted {
             bindings = <&to 1>;
             key-positions = <10 22>;
             layers = <2>;
@@ -286,12 +286,12 @@
             >;
         };
 
-        KEYBR_CMOS {
+        NEO-NOTED {
             bindings = <
-&td_cmos_j_x                                      &kp K       &kp U              &kp O          &kp DE_A_UMLAUT           &kp P      &kp B              &kp L         &kp M     &td_cmos_sz_q
-&mt LEFT_ALT ESCAPE              &hml LEFT_GUI W  &kp H       &hml LCTRL I       &hml LSHIFT E  &kp A                     &kp D      &hmr LEFT_SHIFT T  &hmr LCTRL N  &kp R     &hmr LEFT_GUI S  &mt LEFT_ALT DE_SINGLE_QUOTE
-&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp DE_Y         &as DE_DOT  &td_cmos_ue_minus  &as DE_COMMA   &td_cmos_oe_underscore    &kp G      &kp C              &kp V         &kp DE_Z  &kp F            &mt RALT RETURN
-                                                              &td_modifier       &kp SPACE      &lt 2 DELETE              &lt 3 TAB  &kp BACKSPACE      &caps_word
+&kp DE_Z                                         &kp DE_Y        &kp U               &kp A             &kp Q              &kp P      &kp B             &kp M               &kp L           &kp F
+&mt LEFT_ALT ESCAPE              &mt LEFT_WIN C  &mt LEFT_ALT S  &mt LEFT_CONTROL I  &mt LEFT_SHIFT E  &kp O              &kp D      &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT R  &mt LEFT_GUI H  &kp DE_SZ
+&mt LEFT_SHIFT DE_DOUBLE_QUOTES  &kp V           &kp X           &kp DE_U_UMLAUT     &kp DE_A_UMLAUT   &kp DE_O_UMLAUT    &kp W      &kp G             &kp COMMA           &kp DOT         &kp K           &kp J
+                                                                 &kp LCTRL           &kp SPACE         &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE     &as MINUS
             >;
         };
 
