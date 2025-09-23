@@ -155,6 +155,18 @@
             key-positions = <30 29 31>;
             layers = <0 1>;
         };
+
+        arrow_left {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <16 17>;
+            layers = <0 1>;
+        };
+
+        arrow_right {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <19 20>;
+            layers = <0 1>;
+        };
     };
 
     macros {
