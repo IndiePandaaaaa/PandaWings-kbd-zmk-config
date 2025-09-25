@@ -237,10 +237,10 @@
 
         NAVIGATION {
             bindings = <
-&trans          &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &to 8   &to 5   &to 1   &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans          &trans
-                        &trans  &trans  &trans    &trans          &trans          &trans
+&none         &none  &none  &none  &none    &none           &none           &none         &none            &none
+&none  &none  &to 8  &to 5  &to 1  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT  &none
+&none  &none  &none  &none  &none  &none    &none           &none           &none         &none            &none           &none
+                     &none  &none  &none    &none           &none           &none
             >;
         };
 
@@ -282,10 +282,10 @@
 
         GAME_2 {
             bindings = <
-&game_vrise_inv_clear             &kp DE_N2  &trans     &kp DE_N4  &kp DE_N1    &trans  &trans         &trans  &trans  &trans
-&kp DE_DOT             &kp F5     &kp DE_N1  &trans     &kp DE_N3  &kp I        &trans  &trans         &trans  &trans  &trans  &kp DE_N7
-&kp LEFT_ALT           &kp DE_N7  &kp B      &kp J      &kp G      &kp DE_N5    &trans  &trans         &trans  &trans  &trans  &kp DE_N6
-                                             &kp DE_N6  &trans     &kp F12      &trans  &kp BACKSPACE  &trans
+&game_vrise_inv_clear             &kp DE_N2  &none      &kp DE_N4  &kp DE_N1    &none  &none          &none  &none  &none
+&kp DE_DOT             &kp F5     &kp DE_N1  &none      &kp DE_N3  &kp I        &none  &none          &none  &none  &none  &kp DE_N7
+&kp LEFT_ALT           &kp DE_N7  &kp B      &kp J      &kp G      &kp DE_N5    &none  &none          &none  &none  &none  &kp DE_N6
+                                             &kp DE_N6  &none      &kp F12      &none  &kp BACKSPACE  &none
             >;
         };
     };
