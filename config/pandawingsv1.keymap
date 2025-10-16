@@ -160,27 +160,9 @@
             key-positions = <35 36>;
         };
 
-        alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <10 0>;
-            layers = <0 1>;
-        };
-
         vim_exit {
             bindings = <&vimexit>;
             key-positions = <0 1>;
-        };
-
-        lgui {
-            bindings = <&kp LGUI>;
-            key-positions = <10 22>;
-            layers = <0 1>;
-        };
-
-        minus {
-            bindings = <&as DE_MINUS>;
-            key-positions = <30 31>;
-            layers = <0 1>;
         };
     };
 
@@ -239,8 +221,8 @@
             bindings = <
 &kp Q                        &kp W            &kp E         &kp R               &kp T           &kp DE_Z   &kp U                    &kp I                &kp O            &kp P
 &kp ESCAPE      &hml LGUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml_shift LSHFT F  &kp G           &kp H      &hmr_shift LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI DE_O_UMLAUT  &kp DE_U_UMLAUT
-&sk LEFT_SHIFT  &kp DE_Y     &kp X            &kp C         &kp V               &kp B           &kp N      &kp M                    &as DE_COMMA         &as DE_DOT       &as DE_SZ                  &kp DE_A_UMLAUT
-                                              &sl 4         &kp SPACE           &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE            &sl 4
+&sk LEFT_SHIFT  &kp DE_Y     &kp X            &kp C         &kp V               &kp B           &kp N      &kp M                    &as DE_COMMA         &as DE_DOT       &as DE_MINUS               &kp DE_A_UMLAUT
+                                              &sl 4         &kp SPACE           &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE            &as DE_SZ
             >;
         };
 
@@ -249,7 +231,7 @@
 &kp DE_Z                         &kp DE_Y         &kp U            &kp A                &kp Q              &kp P      &kp B                &kp M         &kp L            &kp F
 &kp ESCAPE      &hml LEFT_GUI C  &hml LEFT_ALT S  &hml LCTRL I     &hml_shift LSHIFT E  &kp O              &kp D      &hmr_shift LSHIFT T  &hmr LCTRL N  &hmr LEFT_ALT R  &hmr LEFT_GUI H  &kp DE_SZ
 &sk LEFT_SHIFT  &kp V            &kp X            &kp DE_U_UMLAUT  &kp DE_A_UMLAUT      &kp DE_O_UMLAUT    &kp W      &kp G                &as DE_COMMA  &as DE_DOT       &kp K            &kp J
-                                                  &sl 4            &kp SPACE            &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE        &sl 4
+                                                  &sl 4            &kp SPACE            &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE        &as DE_MINUS
             >;
         };
 
