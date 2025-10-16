@@ -71,7 +71,7 @@
 
         hml_shift: home_row_mod_left_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HML";
+            label = "HMLS";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -85,7 +85,7 @@
 
         hmr_shift: home_row_mod_right_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
+            label = "HMRS";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
