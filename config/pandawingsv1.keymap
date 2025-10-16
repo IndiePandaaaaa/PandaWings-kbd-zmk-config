@@ -237,10 +237,10 @@
 
         SYMBOLS_NUMBERS {
             bindings = <
-&kp DE_SECTION                        &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EURO         &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
-&kp LS(LEFT_GUI)  &kp DE_AT_SIGN      &kp DE_LEFT_BRACE     &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
-&kp LEFT_GUI      &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH             &kp DE_BACKSLASH     &kp DE_DOLLAR       &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &kp LEFT_SHIFT
-                                                            &none                    &none                &none               &kp DE_COMMA     &kp DE_N0  &kp DE_DOT
+&kp DE_SECTION                    &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EXCLAMATION    &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
+&kp LS(LEFT_GUI)  &kp DE_AT_SIGN  &kp DE_LEFT_BRACE     &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LESS_THAN      &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
+&kp LEFT_GUI      &kp DE_EURO     &kp DE_PIPE           &kp KP_SLASH             &kp DE_BACKSLASH     &kp DE_DEGREE         &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_DOLLAR
+                                                        &none                    &none                &none                 &kp DE_COMMA     &kp DE_N0  &kp DE_DOT
             >;
         };
 
