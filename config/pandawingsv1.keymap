@@ -177,11 +177,11 @@
             compatible = "zmk,behavior-macro-one-param";
             bindings =
                 <&macro_press>,
-                <&kp LSHFT &macro_param_1to1>,
+                <&sk LSHFT &macro_param_1to1>,
                 <&macro_tap>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
-                <&kp LSHFT>;
+                <&sk LSHFT>;
         };
 
         as: autoshift {
