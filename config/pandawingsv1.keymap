@@ -159,11 +159,6 @@
             bindings = <&to 0>;
             key-positions = <35 36>;
         };
-
-        vim_exit {
-            bindings = <&vimexit>;
-            key-positions = <0 1>;
-        };
     };
 
     macros {
@@ -199,13 +194,6 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&macro_param_1to1 &macro_param_1to2 &ht_as MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
-        };
-
-        vimexit: vimexit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DE_COLON &kp W &kp Q &kp A>;
-            label = "VIMEXIT";
         };
     };
 
