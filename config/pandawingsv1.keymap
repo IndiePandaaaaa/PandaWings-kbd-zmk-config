@@ -159,6 +159,11 @@
             bindings = <&to 0>;
             key-positions = <35 36>;
         };
+
+        vim_save {
+            bindings = <&vimsave>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
@@ -194,6 +199,13 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&macro_param_1to1 &macro_param_1to2 &ht_as MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+        };
+
+        vimsave: vimsave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_COLON &kp W &kp A &kp RETURN>;
+            label = "VIMSAVE";
         };
     };
 
