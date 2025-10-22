@@ -222,7 +222,7 @@
 &kp Q                        &kp W            &kp E         &kp R               &kp T           &kp DE_Z   &kp U                    &kp I                &kp O            &kp P
 &kp ESCAPE      &hml LGUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml_shift LSHFT F  &kp G           &kp H      &hmr_shift LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI DE_O_UMLAUT  &kp DE_U_UMLAUT
 &sk LEFT_SHIFT  &kp DE_Y     &kp X            &kp C         &kp V               &kp B           &kp N      &kp M                    &as DE_COMMA         &as DE_DOT       &as DE_MINUS               &kp DE_A_UMLAUT
-                                              &sl 4         &kp SPACE           &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE            &as DE_SZ
+                                              &mo 4         &kp SPACE           &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE            &as DE_SZ
             >;
         };
 
@@ -231,16 +231,16 @@
 &kp DE_Z                         &kp DE_Y         &kp U            &kp A                &kp Q              &kp P      &kp B                &kp M         &kp L            &kp F
 &kp ESCAPE      &hml LEFT_GUI C  &hml LEFT_ALT S  &hml LCTRL I     &hml_shift LSHIFT E  &kp O              &kp D      &hmr_shift LSHIFT T  &hmr LCTRL N  &hmr LEFT_ALT R  &hmr LEFT_GUI H  &kp DE_SZ
 &sk LEFT_SHIFT  &kp V            &kp X            &kp DE_U_UMLAUT  &kp DE_A_UMLAUT      &kp DE_O_UMLAUT    &kp W      &kp G                &as DE_COMMA  &as DE_DOT       &kp K            &kp J
-                                                  &sl 4            &kp SPACE            &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE        &as DE_MINUS
+                                                  &mo 4            &kp SPACE            &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE        &as DE_MINUS
             >;
         };
 
         SYMBOLS_NUMBERS {
             bindings = <
-&kp DE_SECTION                    &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EXCLAMATION    &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
-&kp LS(LEFT_GUI)  &kp DE_AT_SIGN  &kp DE_LEFT_BRACE     &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LESS_THAN      &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
-&kp LEFT_GUI      &kp DE_EURO     &kp DE_PIPE           &kp KP_SLASH             &kp DE_BACKSLASH     &kp DE_DEGREE         &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_DOLLAR
-                                                        &none                    &none                &none                 &kp DE_COMMA     &kp DE_N0  &kp DE_DOT
+&kp DE_SECTION                              &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EURO         &kp DE_TILDE     &kp DE_N7  &kp DE_N8   &kp DE_N9  &as DE_CARET
+&kp LS(LEFT_GUI)        &kp DE_AT_SIGN      &kp DE_LEFT_BRACE     &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LESS_THAN    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp KP_PLUS   &as DE_HASH
+&mt LEFT_GUI DE_DOLLAR  &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH             &kp DE_BACKSLASH     &kp DE_DEGREE       &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp KP_MINUS  &mt LEFT_SHIFT DE_COLON
+                                                                  &none                    &none                &none               &kp DE_COMMA     &kp DE_N0  &kp DE_DOT
             >;
         };
 
@@ -293,16 +293,16 @@
             bindings = <
 &kp V                       &kp Q     &kp W  &kp E  &kp R        &kp T       &kp DE_Z  &kp UP          &kp I          &kp O
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
-&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp T        &kp B       &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
+&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp G        &kp B       &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
                                       &kp M  &sl 9  &kp SPACE    &kp RETURN  &kp F12   &kp LS(TAB)
             >;
         };
 
         GAME_2 {
             bindings = <
-&game_vrise_inv_clear             &kp DE_N2  &none      &kp DE_N4  &kp DE_N1    &none  &none          &none  &none  &none
-&kp DE_DOT             &kp F5     &kp DE_N1  &none      &kp DE_N3  &kp I        &none  &none          &none  &none  &none  &kp DE_N7
-&kp LEFT_ALT           &kp DE_N7  &kp B      &kp J      &kp G      &kp DE_N5    &none  &none          &none  &none  &none  &kp DE_N6
+&game_vrise_inv_clear             &kp DE_N2  &none      &kp DE_N4  &kp N        &none  &kp LS(TAB)    &kp LS(F2)  &none  &none
+&kp DE_DOT             &kp F5     &kp DE_N1  &none      &kp DE_N3  &kp I        &none  &none          &none       &none  &none  &kp DE_N7
+&kp LEFT_ALT           &kp DE_N7  &kp B      &kp J      &kp T      &kp DE_N5    &none  &none          &none       &none  &none  &kp DE_N6
                                              &kp DE_N6  &none      &kp F12      &none  &kp BACKSPACE  &none
             >;
         };
