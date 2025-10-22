@@ -180,8 +180,7 @@
                 <&sk LSHFT &macro_param_1to1>,
                 <&macro_tap>,
                 <&kp MACRO_PLACEHOLDER>,
-                <&macro_release>,
-                <&sk LSHFT>;
+                <&macro_release>;
         };
 
         as: autoshift {
