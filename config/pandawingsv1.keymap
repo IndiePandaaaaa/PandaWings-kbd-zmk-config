@@ -142,15 +142,27 @@
             layers = <0 1>;
         };
 
+        return_2 {
+          bindings = <&kp RETURN>;
+          key-positions = <21 33>;
+          layers = <0 1>;
+        }
+
+        shift_return {
+            bindings = <&kp LS(RETURN)>;
+            key-positions = <10 22>;
+            layers = <0 1>;
+        };
+
         lside_reset {
             bindings = <&bootloader>;
-            key-positions = <1 3 0 2>;
+            key-positions = <0 1 2 3>;
             layers = <2>;
         };
 
         rside_reset {
             bindings = <&bootloader>;
-            key-positions = <6 8 7 9>;
+            key-positions = <6 7 8 9>;
             layers = <3>;
         };
 
