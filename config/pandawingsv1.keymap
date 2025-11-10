@@ -264,9 +264,9 @@
 
         SYMBOLS {
             bindings = <
-               &kp DE_SECTION      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EURO         &kp DE_TILDE         &kp DE_QUESTION       &none          &kp DE_SINGLE_QUOTE  &kp DE_CARET
+               &kp DE_SECTION      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EURO         &kp DE_TILDE         &kp DE_QUESTION       &kp DE_COLON          &kp DE_SINGLE_QUOTE  &kp DE_CARET
 &kp LEFT_ALT   &kp DE_AT_SIGN      &kp DE_LEFT_BRACE     &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LESS_THAN    &kp DE_GREATER_THAN  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE   &kp DE_DOLLAR   &kp DE_HASH
-&caps_word     &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH             &kp DE_BACKSLASH     &kp DE_DEGREE       &kp KP_ASTERISK      &as DE_MINUS          &discord_codesegment      &kp DE_GRAVE         &kp DE_ACUTE  &none
+&caps_word     &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH             &kp DE_BACKSLASH     &kp DE_DEGREE       &kp KP_ASTERISK      &as DE_MINUS          &discord_codesegment      &kp DE_GRAVE         &kp DE_ACUTE  &kp DE_SEMICOLON
                                           &none   &none   &none      &none                &none                 &none
             >;
         };
