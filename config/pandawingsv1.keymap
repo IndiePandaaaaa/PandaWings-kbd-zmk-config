@@ -146,7 +146,7 @@
           bindings = <&kp RETURN>;
           key-positions = <21 33>;
           layers = <0 1>;
-        }
+        };
 
         shift_return {
             bindings = <&kp LS(RETURN)>;
