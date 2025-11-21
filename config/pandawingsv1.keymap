@@ -184,7 +184,17 @@
             #binding-cells = <0>;
             wait-ms = <50>;
             tap-ms = <50>;
-            bindings = <&kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E>;
+            bindings = <&kp R &mkp RCLK &kp E>
+                     , <&kp R &mkp RCLK &kp E>
+                     , <&kp R &mkp RCLK &kp E>
+                     , <&kp R &mkp RCLK &kp E>
+                     , <&kp R &mkp RCLK &kp E>
+                     , <&kp R &mkp RCLK &kp E>
+                     , <&kp R &mkp RCLK &kp E>
+                     , <&kp R &mkp RCLK &kp E>
+                     , <&kp R &mkp RCLK &kp E>
+                     , <&kp R &mkp RCLK &kp E>;
+
         };
 
         game_palw_necklaced_pal_fix: game_palw_necklaced_pal_fix {
