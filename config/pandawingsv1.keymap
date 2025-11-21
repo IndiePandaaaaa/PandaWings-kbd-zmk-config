@@ -193,7 +193,15 @@
             #binding-cells = <0>;
             wait-ms = <100>;
             tap-ms = <100>;
-            bindings = <&kp DE_N3 &kp E &kp DE_N3 &kp E &kp DE_N3 &kp E &kp DE_N3 &kp E &kp DE_N3 &kp E>;
+            bindings = <&kp DE_N3 &kp E>
+                     , <&macro_wait_time 1000>
+                     , <&kp DE_N3 &kp E>
+                     , <&macro_wait_time 1000>
+                     , <&kp DE_N3 &kp E>
+                     , <&macro_wait_time 1000>
+                     , <&kp DE_N3 &kp E>
+                     , <&macro_wait_time 1000>
+                     , <&kp DE_N3 &kp E>;
         };
 
         shifted: macro_shifted_kp {
