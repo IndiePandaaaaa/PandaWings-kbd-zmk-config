@@ -201,16 +201,16 @@
             compatible = "zmk,behavior-macro";
             label = "GAME_PALW_NECKLACED_PAL_FIX";
             #binding-cells = <0>;
-            wait-ms = <100>;
-            tap-ms = <100>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings = <&kp DE_N3 &kp E>
-                     , <&macro_wait_time 1000>
+                     , <&macro_wait_time 2000>
                      , <&kp DE_N3 &kp E>
-                     , <&macro_wait_time 1000>
+                     , <&macro_wait_time 2000>
                      , <&kp DE_N3 &kp E>
-                     , <&macro_wait_time 1000>
+                     , <&macro_wait_time 2000>
                      , <&kp DE_N3 &kp E>
-                     , <&macro_wait_time 1000>
+                     , <&macro_wait_time 2000>
                      , <&kp DE_N3 &kp E>;
         };
 
