@@ -1,22 +1,14 @@
-if PANDAWINGSV1_LEFT
-
-  config ZMK_KEYBOARD_NAME
-    default "PandaWings"
+if PANDAWINGS-I_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "PandaWings"
-	
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
-	
-config ZMK_USB
-	default y
+    default "PandaWings I"
 
-endif
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 
-if PANDAWINGSV1_LEFT || PANDAWINGSV1_RIGHT
+if PANDAWINGS-I_DONGLE || PANDAWINGS-I_LEFT || PANDAWINGS-I_RIGHT
 
-  config ZMK_SPLIT
+config ZMK_SPLIT
     default y
 
 endif
