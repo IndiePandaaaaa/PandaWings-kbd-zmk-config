@@ -1,6 +1,6 @@
 file_format: "1"
-id: pandawingsv1
-name: PandaWings v1
+id: pandawings-i
+name: PandaWings I
 type: shield
 url: https://github.com/IndiePandaaaaa/PandaWings-kbd
 requires: [seeeduino_xiao_ble]
@@ -9,5 +9,6 @@ features:
   - leds
   - display
 siblings:
-  - pandawingsv1_left
-  - pandawingsv1_right
+  - pandawings-i_left
+  - pandawings-i_right
+  - pandawings-i_dongle
