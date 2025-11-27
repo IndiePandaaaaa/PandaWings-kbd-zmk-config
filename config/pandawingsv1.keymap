@@ -191,7 +191,7 @@
             compatible = "zmk,behavior-macro";
             label = "GAME_PALW_NECKLACED_PAL_FIX";
             #binding-cells = <0>;
-            wait-ms = <50>;
+            wait-ms = <100>;
             tap-ms = <50>;
             bindings =
                 <&kp DE_N3 &kp E>,
@@ -265,7 +265,7 @@
         NEO-NOTED {
             bindings = <
 &kp DE_Z                         &kp DE_Y         &kp U            &kp A                &kp Q              &kp P      &kp B                &kp M         &kp L            &kp F
-&kp ESCAPE      &hml LEFT_GUI C  &hml LEFT_ALT S  &hml LCTRL I     &hml_shift LSHIFT E  &kp O              &kp D      &hmr_shift LSHIFT T  &hmr LCTRL N  &hmr LEFT_ALT R  &hmr LEFT_GUI H  &kp DE_SZ
+&kp ESCAPE      &hml LEFT_GUI C  &hml LEFT_ALT S  &hml LCTRL I     &hml_shift LSHIFT E  &kp O              &kp D      &hmr_shift LSHIFT T  &hmr LCTRL N  &hmr LEFT_ALT R  &hmr LEFT_GUI H  &as DE_SZ
 &sk LEFT_SHIFT  &kp V            &kp X            &kp DE_U_UMLAUT  &kp DE_A_UMLAUT      &kp DE_O_UMLAUT    &kp W      &kp G                &as DE_COMMA  &as DE_DOT       &kp K            &kp J
                                                   &mo 4            &kp SPACE            &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE        &as DE_MINUS
             >;
@@ -274,7 +274,7 @@
         DESKTOP+NUMBERS {
             bindings = <
 &kp LG(UP_ARROW)                      &kp LG(LEFT_ARROW)   &kp LG(E)  &kp LG(R)  &kp LG(LS(H))    &kp DE_EURO      &kp DE_N7  &kp DE_N8     &kp DE_N9  &as DE_CARET
-&kp LS(LEFT_GUI)  &sl 0               &kp LG(LS(S))        &kp LG(D)  &kp LG(F)  &kp LG(LS(G))    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5     &kp DE_N6  &kp KP_PLUS   &kp KP_SLASH
+&kp LS(LEFT_GUI)  &none               &kp LG(LS(S))        &kp LG(D)  &kp LG(F)  &kp LG(LS(G))    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5     &kp DE_N6  &kp KP_PLUS   &kp KP_SLASH
 &kp LEFT_GUI      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(C)  &kp LG(V)  &kp LG(LS(B))    &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2     &kp DE_N3  &kp KP_MINUS  &as DE_DOT
                                                            &none      &none      &none            &mo 4            &kp DE_N0  &kp DE_COMMA
             >;
@@ -282,19 +282,19 @@
 
         SYMBOLS {
             bindings = <
-&kp DE_SECTION                      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EURO         &kp DE_DEGREE        &kp DE_QUESTION       &kp DE_COLON              &kp DE_SINGLE_QUOTE  &kp DE_CARET
+&kp DE_SECTION                      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EURO         &kp DE_EQUAL         &kp DE_QUESTION       &kp DE_COLON              &kp DE_SINGLE_QUOTE  &as DE_CARET
 &kp LEFT_ALT    &kp DE_AT_SIGN      &kp DE_LEFT_BRACE     &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LESS_THAN    &kp DE_GREATER_THAN  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE   &kp DE_DOLLAR  &kp DE_HASH
 &caps_word      &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH             &kp DE_BACKSLASH     &kp DE_TILDE        &kp KP_ASTERISK      &as DE_MINUS          &discord_codesegment      &kp DE_GRAVE         &kp DE_ACUTE   &kp DE_SEMICOLON
-                                                          &none                    &none                &mo 6               &none                &none                 &none
+                                                          &none                    &none                &mo 5               &none                &none                 &none
             >;
         };
 
         FUNCTIONS+NAVIGATION {
             bindings = <
-&kp LSHFT             &kp F1  &kp F4  &kp F7  &kp F10    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_UP  &kp C_BRI_DN     &bt BT_SEL 0
-&kp LGUI   &kp LALT   &kp F2  &kp F5  &kp F8  &kp F11    &kp LEFT_ARROW     &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &bt BT_SEL 1  &none
-&kp LGUI   &kp LCTRL  &kp F3  &kp F6  &kp F9  &kp F12    &none              &to 1            &none         &to 6            &bt BT_SEL 2  &none
-                              &none   &none   &none      &none              &none            &bt BT_CLR
+&kp LSHFT                &kp F1  &kp F4  &kp F7  &kp F10    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_UP  &kp C_BRI_DN     &bt BT_SEL 0
+&kp LS(LGUI)  &kp LALT   &kp F2  &kp F5  &kp F8  &kp F11    &kp LEFT_ARROW     &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &bt BT_SEL 1  &none
+&kp LGUI      &kp LCTRL  &kp F3  &kp F6  &kp F9  &kp F12    &none              &to 1            &to 5         &to 6            &bt BT_SEL 2  &none
+                                 &none   &none   &none      &none              &none            &bt BT_CLR
             >;
         };
 
