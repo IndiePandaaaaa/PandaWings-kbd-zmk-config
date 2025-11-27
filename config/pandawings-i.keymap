@@ -1,9 +1,9 @@
 #include "keys_de.h"
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
+#include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/pointing.h>
 
 // https://github.com/urob/zmk-config#timeless-homerow-mods
@@ -39,6 +39,17 @@
             tapping-term-ms = <QUICK_TAP_MS>;
             bindings = <&shifted>, <&kp>;
         };
+
+        hm: homerow_mods {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS";
+          #binding-cells = <2>;
+          flavor = "tap-preferred";
+          tapping-term-ms = <200>;
+          quick-tap-ms = <125>;
+          global-quick-tap;
+          bindings = <&kp>, <&kp>;
+        }
 
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
