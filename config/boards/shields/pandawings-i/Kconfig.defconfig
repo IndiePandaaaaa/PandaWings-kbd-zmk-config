@@ -1,7 +1,7 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if PANDAWINGS-I_DONGLE
+if SHIELD_PANDAWINGS-I_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "PandaWings I"
@@ -14,7 +14,7 @@ config ZMK_USB
 
 endif
 
-if PANDAWINGS-I_DONGLE || PANDAWINGS-I_LEFT || PANDAWINGS-I_RIGHT
+if SHIELD_PANDAWINGS-I_DONGLE || SHIELD_PANDAWINGS-I_LEFT || SHIELD_PANDAWINGS-I_RIGHT
 
 config ZMK_SPLIT
     default y
