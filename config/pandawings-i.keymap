@@ -49,7 +49,7 @@
           quick-tap-ms = <125>;
           global-quick-tap;
           bindings = <&kp>, <&kp>;
-        }
+        };
 
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
