@@ -285,25 +285,52 @@
 &kp DE_SECTION                      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EURO         &kp DE_DEGREE        &kp DE_QUESTION       &kp DE_COLON              &kp DE_SINGLE_QUOTE  &kp DE_CARET
 &kp LEFT_ALT    &kp DE_AT_SIGN      &kp DE_LEFT_BRACE     &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LESS_THAN    &kp DE_GREATER_THAN  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE   &kp DE_DOLLAR  &kp DE_HASH
 &caps_word      &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH             &kp DE_BACKSLASH     &kp DE_TILDE        &kp KP_ASTERISK      &as DE_MINUS          &discord_codesegment      &kp DE_GRAVE         &kp DE_ACUTE   &kp DE_SEMICOLON
-                                                          &none                    &none                &mo 5               &none                &none                 &none
+                                                          &none                    &none                &mo 7               &none                &none                 &none
             >;
         };
 
         NAVIGATION {
             bindings = <
 &kp C_VOLUME_DOWN         &kp C_VOLUME_UP  &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &bt BT_SEL 0    &bt BT_CLR      &none           &none         &none            &none
-&none              &none  &to 8            &to 5          &to 1                 &bt BT_SEL 1    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT  &none
+&none              &none  &to 7            &none          &to 1                 &bt BT_SEL 1    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT  &none
 &none              &none  &none            &none          &none                 &bt BT_SEL 2    &none           &none           &none         &none            &none           &none
                                            &none          &none                 &none           &none           &none           &none
             >;
         };
 
+        FUNCTIONS+MEDIA {
+            bindings = <
+&kp LSHFT                &kp F1  &kp F4  &kp F7  &kp F10    &trans  &trans  &trans  &trans  &trans
+&kp LS(LGUI)  &kp LALT   &kp F2  &kp F5  &kp F8  &kp F11    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LGUI      &kp LCTRL  &kp F3  &kp F6  &kp F9  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans  &trans  &trans     &trans  &trans  &trans
+            >;
+        };
+
         MOUSE {
             bindings = <
-&mo 7                &none      &none      &none      &none    &none           &none           &none         &none            &none
-&kp LCTRL  &mo 6     &mkp RCLK  &mkp MCLK  &mkp LCLK  &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &kp LEFT_ALT
+&mo 10               &none      &none      &none      &none    &none           &none           &none         &none            &none
+&kp LCTRL  &mo 9     &mkp RCLK  &mkp MCLK  &mkp LCLK  &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &kp LEFT_ALT
 &kp LSHFT  &kp LGUI  &none      &none      &none      &none    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &kp LGUI
                                 &none      &none      &none    &none           &none           &none
+            >;
+        };
+
+        GAME {
+            bindings = <
+&kp V                       &kp Q     &kp W  &kp E  &kp R        &kp T       &kp DE_Z  &kp UP          &kp I          &kp O
+&kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
+&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp G        &kp B       &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
+                                      &kp M  &sl 8  &kp SPACE    &kp RETURN  &kp F12   &kp LS(TAB)
+            >;
+        };
+
+        GAME_2 {
+            bindings = <
+&none                    &kp DE_N2  &none      &kp DE_N4  &kp N        &none  &kp LS(TAB)    &kp LS(F2)     &kp LS(DE_CARET)         &none
+&kp DE_DOT    &kp F5     &kp DE_N1  &none      &kp DE_N3  &kp I        &none  &none          &kp LS(LC(M))  &kp LS(LC(DE_U_UMLAUT))  &none  &game_vrise_inv_clear
+&kp LEFT_ALT  &kp DE_N7  &kp B      &kp J      &kp T      &kp DE_N5    &none  &none          &none          &none                    &none  &game_palw_necklaced_pal_fix
+                                    &kp DE_N6  &none      &kp F12      &none  &kp BACKSPACE  &none
             >;
         };
 
@@ -322,24 +349,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        GAME {
-            bindings = <
-&kp V                       &kp Q     &kp W  &kp E  &kp R        &kp T       &kp DE_Z  &kp UP          &kp I          &kp O
-&kp ESCAPE  &kp LEFT_SHIFT  &kp A     &kp S  &kp D  &kp F        &kp G       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp L         &kp P
-&kp TAB     &kp LCTRL       &kp DE_Y  &kp X  &kp C  &kp G        &kp B       &kp N     &kp M           &kp DE_PERIOD  &kp DE_COMMA  &kp DE_MINUS
-                                      &kp M  &sl 9  &kp SPACE    &kp RETURN  &kp F12   &kp LS(TAB)
-            >;
-        };
-
-        GAME_2 {
-            bindings = <
-&none                    &kp DE_N2  &none      &kp DE_N4  &kp N        &none  &kp LS(TAB)    &kp LS(F2)     &kp LS(DE_CARET)         &none
-&kp DE_DOT    &kp F5     &kp DE_N1  &none      &kp DE_N3  &kp I        &none  &none          &kp LS(LC(M))  &kp LS(LC(DE_U_UMLAUT))  &none  &game_vrise_inv_clear
-&kp LEFT_ALT  &kp DE_N7  &kp B      &kp J      &kp T      &kp DE_N5    &none  &none          &none          &none                    &none  &game_palw_necklaced_pal_fix
-                                    &kp DE_N6  &none      &kp F12      &none  &kp BACKSPACE  &none
             >;
         };
     };
