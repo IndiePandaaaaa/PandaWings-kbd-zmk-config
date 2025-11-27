@@ -12,6 +12,7 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
+# INFO: the dongle is now working so there is only the dongle version available
 ---
 include:
   - board: seeeduino_xiao_ble
