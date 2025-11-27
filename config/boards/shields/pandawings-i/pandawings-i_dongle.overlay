@@ -1,7 +1,9 @@
 // thanks to: https://github.com/aroum/zmk-enki42-dongle
 // and to: https://github.com/eigatech/zmk-config/tree/totem-dongle
 
-#include "pandawings-i.dtsi";
+#include "pandawings-i.dtsi"
+
+;
 
 &kscan0 {
   col-gpios
