@@ -1,9 +1,9 @@
 #include "keys_de.h"
-#include <behaviors.dtsi>
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/pointing.h>
 
 // https://github.com/urob/zmk-config#timeless-homerow-mods
@@ -41,14 +41,14 @@
         };
 
         hm: homerow_mods {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          flavor = "tap-preferred";
-          tapping-term-ms = <200>;
-          quick-tap-ms = <125>;
-          global-quick-tap;
-          bindings = <&kp>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
         };
 
         hml: home_row_mod_left {
@@ -165,18 +165,6 @@
             layers = <0 1>;
         };
 
-        lside_reset {
-            bindings = <&bootloader>;
-            key-positions = <0 1 2 3>;
-            layers = <2>;
-        };
-
-        rside_reset {
-            bindings = <&bootloader>;
-            key-positions = <6 7 8 9>;
-            layers = <3>;
-        };
-
         to_base_layer {
             bindings = <&to 0>;
             key-positions = <35 36>;
@@ -185,6 +173,11 @@
         vim_save {
             bindings = <&vimsave>;
             key-positions = <30 31>;
+        };
+
+        vim_quit {
+            bindings = <&vimquit>;
+            key-positions = <28 29>;
         };
     };
 
@@ -253,6 +246,13 @@
             #binding-cells = <0>;
             bindings = <&kp DE_COLON &kp W &kp A &kp RETURN>;
             label = "VIMSAVE";
+        };
+
+        vimquit: vimquit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_COLON &kp Q &kp A &kp RETURN>;
+            label = "VIMQUIT";
         };
     };
 
