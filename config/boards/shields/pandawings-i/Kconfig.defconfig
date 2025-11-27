@@ -1,3 +1,6 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
 if PANDAWINGS-I_DONGLE
 
 config ZMK_KEYBOARD_NAME
@@ -6,11 +9,17 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+    default y
+
 endif
 
 if PANDAWINGS-I_DONGLE || PANDAWINGS-I_LEFT || PANDAWINGS-I_RIGHT
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
     default y
 
 endif

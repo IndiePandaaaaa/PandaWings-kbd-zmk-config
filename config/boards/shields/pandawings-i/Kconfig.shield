@@ -1,11 +1,11 @@
 # Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-config SHIELD_PANDAWINGS-I_DONGLE
-    def_bool $(shields_list_contains,pandawings-i_dongle)
-
-config PANDAWINGS-I_LEFT
+config SHIELD_PANDAWINGS-I_LEFT
     def_bool $(shields_list_contains,pandawings-i_left)
 
-config PANDAWINGS-I_RIGHT
+config SHIELD_PANDAWINGS-I_RIGHT
     def_bool $(shields_list_contains,pandawings-i_right)
+
+config SHIELD_PANDAWINGS-I_DONGLE
+    def_bool $(shields_list_contains,pandawings-i_dongle)
