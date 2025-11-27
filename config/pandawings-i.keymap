@@ -266,10 +266,10 @@
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
 
             bindings = <
-&kp Q                        &kp W            &kp E         &kp R               &kp T           &kp DE_Z   &kp U                    &kp I                &kp O            &kp P
-&kp ESCAPE      &hml LGUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml_shift LSHFT F  &kp G           &kp H      &hmr_shift LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI DE_O_UMLAUT  &kp DE_U_UMLAUT
-&sk LEFT_SHIFT  &kp DE_Y     &kp X            &kp C         &kp V               &kp B           &kp N      &kp M                    &as DE_COMMA         &as DE_DOT       &as DE_MINUS               &kp DE_A_UMLAUT
-                                              &mo 4         &kp SPACE           &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE            &as DE_SZ
+&kp Q                       &kp W           &kp E        &kp R        &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
+&kp ESCAPE      &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LSHFT F  &kp G           &kp H      &hm LEFT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_GUI DE_O_UMLAUT  &kp DE_U_UMLAUT
+&sk LEFT_SHIFT  &kp DE_Y    &kp X           &kp C        &kp V        &kp B           &kp N      &kp M             &as DE_COMMA        &as DE_DOT      &as DE_MINUS              &kp DE_A_UMLAUT
+                                            &mo 4        &kp SPACE    &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE     &as DE_SZ
             >;
         };
 
