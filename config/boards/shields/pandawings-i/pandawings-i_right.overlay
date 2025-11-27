@@ -1,4 +1,4 @@
-#include "pandawings-i.dtsi"
+#include "pandawings-i.dtsi";
 
 &default_transform {
   col-offset = <5>;
