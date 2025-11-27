@@ -276,7 +276,7 @@
 &kp LG(UP_ARROW)                      &kp LG(LEFT_ARROW)   &kp LG(E)  &kp LG(R)  &kp LG(LS(H))    &kp DE_EURO      &kp DE_N7  &kp DE_N8     &kp DE_N9  &as DE_CARET
 &kp LS(LEFT_GUI)  &trans              &kp LG(LS(S))        &kp LG(D)  &kp LG(F)  &kp LG(LS(G))    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5     &kp DE_N6  &kp KP_PLUS   &kp KP_SLASH
 &kp LEFT_GUI      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(C)  &kp LG(V)  &kp LG(LS(B))    &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2     &kp DE_N3  &kp KP_MINUS  &as DE_DOT
-                                                           &none      &none      &none            &none            &kp DE_N0  &kp DE_COMMA
+                                                           &none      &none      &none            &mo 4            &kp DE_N0  &kp DE_COMMA
             >;
         };
 
@@ -285,7 +285,7 @@
 &kp DE_SECTION                      &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND         &kp DE_PERCENT       &kp DE_EURO         &kp DE_DEGREE        &kp DE_QUESTION       &kp DE_COLON              &kp DE_SINGLE_QUOTE  &kp DE_CARET
 &kp LEFT_ALT    &kp DE_AT_SIGN      &kp DE_LEFT_BRACE     &kp DE_LEFT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_LESS_THAN    &kp DE_GREATER_THAN  &kp DE_RIGHT_BRACKET  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE   &kp DE_DOLLAR  &kp DE_HASH
 &caps_word      &kp DE_EXCLAMATION  &kp DE_PIPE           &kp KP_SLASH             &kp DE_BACKSLASH     &kp DE_TILDE        &kp KP_ASTERISK      &as DE_MINUS          &discord_codesegment      &kp DE_GRAVE         &kp DE_ACUTE   &kp DE_SEMICOLON
-                                                          &none                    &none                &none               &none                &none                 &none
+                                                          &none                    &none                &mo 5               &none                &none                 &none
             >;
         };
 
