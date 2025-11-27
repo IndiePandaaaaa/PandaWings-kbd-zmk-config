@@ -271,12 +271,12 @@
             >;
         };
 
-        FUNCTIONS_NUMBERS {
+        DESKTOP+NUMBERS {
             bindings = <
-&kp LEFT_SHIFT                      &kp F1  &kp F4  &kp F7  &kp F10    &kp DE_EURO      &kp DE_N7  &kp DE_N8     &kp DE_N9  &as DE_CARET
-&kp LS(LEFT_GUI)  &kp LEFT_ALT      &kp F2  &kp F5  &kp F8  &kp F11    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5     &kp DE_N6  &kp KP_PLUS   &kp KP_SLASH
-&kp LEFT_GUI      &kp LEFT_CONTROL  &kp F3  &kp F6  &kp F9  &kp F12    &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2     &kp DE_N3  &kp KP_MINUS  &as DE_DOT
-                                            &none   &none   &none      &none            &kp DE_N0  &kp DE_COMMA
+&kp LG(UP_ARROW)                      &kp LG(LEFT_ARROW)   &kp LG(E)  &kp LG(R)  &kp LG(LS(H))    &kp DE_EURO      &kp DE_N7  &kp DE_N8     &kp DE_N9  &as DE_CARET
+&kp LS(LEFT_GUI)  &trans              &kp LG(LS(S))        &kp LG(D)  &kp LG(F)  &kp LG(LS(G))    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5     &kp DE_N6  &kp KP_PLUS   &kp KP_SLASH
+&kp LEFT_GUI      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(C)  &kp LG(V)  &kp LG(LS(B))    &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2     &kp DE_N3  &kp KP_MINUS  &as DE_DOT
+                                                           &none      &none      &none            &none            &kp DE_N0  &kp DE_COMMA
             >;
         };
 
@@ -292,7 +292,7 @@
         NAVIGATION {
             bindings = <
 &kp C_VOLUME_DOWN         &kp C_VOLUME_UP  &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &bt BT_SEL 0    &bt BT_CLR      &none           &none         &none            &none
-&kp LG(LS(S))      &none  &to 8            &to 5          &to 1                 &bt BT_SEL 1    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT  &none
+&none              &none  &to 8            &to 5          &to 1                 &bt BT_SEL 1    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT  &none
 &none              &none  &none            &none          &none                 &bt BT_SEL 2    &none           &none           &none         &none            &none           &none
                                            &none          &none                 &none           &none           &none           &none
             >;
