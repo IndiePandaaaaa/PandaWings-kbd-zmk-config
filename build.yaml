@@ -15,11 +15,11 @@
 # INFO: the dongle is now working so there is only the dongle version available
 ---
 include:
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: pandawings-i_dongle
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: pandawings-i_left
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: pandawings-i_right
