@@ -160,13 +160,13 @@
 
         return {
             bindings = <&kp RETURN>;
-            key-positions = <18 19 20>;
+            key-positions = <21 33>;
             layers = <0 1>;
         };
 
         shift_return {
             bindings = <&kp LS(RETURN)>;
-            key-positions = <11 12 13>;
+            key-positions = <10 22>;
             layers = <0 1>;
         };
 
@@ -183,6 +183,11 @@
         arrow_down {
             bindings = <&kp DOWN>;
             key-positions = <29 30 31>;
+        };
+
+        arrow_up {
+            bindings = <&kp UP>;
+            key-positions = <6 7 8>;
         };
     };
 
