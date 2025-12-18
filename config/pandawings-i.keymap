@@ -309,10 +309,10 @@
 
         FUNCTIONS+NAVIGATION {
             bindings = <
-&kp LSHFT                &kp F1  &kp F4  &kp F7  &kp F10    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_UP  &kp C_BRI_DN     &bt BT_SEL 0
-&kp LS(LGUI)  &kp LALT   &kp F2  &kp F5  &kp F8  &kp F11    &kp LEFT_ARROW     &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &bt BT_SEL 1  &none
-&kp LGUI      &kp LCTRL  &kp F3  &kp F6  &kp F9  &kp F12    &none              &to 1            &to 5         &to 6            &bt BT_SEL 2  &none
-                                 &none   &none   &none      &none              &none            &bt BT_CLR
+&kp LSHFT                    &kp F1  &kp F4  &kp F7  &kp F10    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_UP  &kp C_BRI_DN     &bt BT_SEL 0
+&kp LS(LGUI)      &kp LALT   &kp F2  &kp F5  &kp F8  &kp F11    &kp LEFT_ARROW     &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &bt BT_SEL 1  &none
+&kp LC(LEFT_ALT)  &kp LCTRL  &kp F3  &kp F6  &kp F9  &kp F12    &none              &to 1            &to 5         &to 6            &bt BT_SEL 2  &none
+                                     &none   &none   &none      &none              &none            &bt BT_CLR
             >;
         };
 
