@@ -282,10 +282,10 @@
 
         NEO-NOTED {
             bindings = <
-&kp DE_Z                         &kp DE_Y         &kp U            &kp A                &kp Q              &kp P      &kp B                &kp M         &kp L            &kp F
-&kp ESCAPE      &hml LEFT_GUI C  &hml LEFT_ALT S  &hml LCTRL I     &hml_shift LSHIFT E  &kp O              &kp D      &hmr_shift LSHIFT T  &hmr LCTRL N  &hmr LEFT_ALT R  &hmr LEFT_GUI H  &as DE_SZ
-&sk LEFT_SHIFT  &kp V            &kp X            &kp DE_U_UMLAUT  &kp DE_A_UMLAUT      &kp DE_O_UMLAUT    &kp W      &kp G                &as DE_COMMA  &as DE_DOT       &kp K            &kp J
-                                                  &mo 6            &kp SPACE            &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE        &as DE_MINUS
+&kp DE_Z                        &kp DE_Y        &kp U            &kp A            &kp Q              &kp P      &kp B          &kp M         &kp L           &kp F
+&kp ESCAPE      &hm LEFT_GUI C  &hm LEFT_ALT S  &hm LCTRL I      &hm LSHIFT E     &kp O              &kp D      &hm LSHIFT T   &hm LCTRL N   &hm LEFT_ALT R  &hm LEFT_GUI H  &as DE_SZ
+&sk LEFT_SHIFT  &kp V           &kp X           &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT    &kp W      &kp G          &as DE_COMMA  &as DE_DOT      &kp K           &kp J
+                                                &mo 6            &kp SPACE        &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE  &as DE_MINUS
             >;
         };
 
