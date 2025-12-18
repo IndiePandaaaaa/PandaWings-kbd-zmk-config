@@ -119,6 +119,11 @@
     combos {
         compatible = "zmk,combos";
 
+        to_base_layer {
+            bindings = <&to 0>;
+            key-positions = <35 36>;
+        };
+
         select_all {
             bindings = <&kp LC(A)>;
             key-positions = <23 24>;
@@ -143,12 +148,6 @@
             layers = <0 1>;
         };
 
-        return {
-            bindings = <&kp RETURN>;
-            key-positions = <18 19 20>;
-            layers = <0 1>;
-        };
-
         line_start {
             bindings = <&kp HOME>;
             key-positions = <12 13 14>;
@@ -161,15 +160,16 @@
             layers = <0 1>;
         };
 
+        return {
+            bindings = <&kp RETURN>;
+            key-positions = <18 19 20>;
+            layers = <0 1>;
+        };
+
         shift_return {
             bindings = <&kp LS(RETURN)>;
             key-positions = <11 12 13>;
             layers = <0 1>;
-        };
-
-        to_base_layer {
-            bindings = <&to 0>;
-            key-positions = <35 36>;
         };
 
         vim_save {
@@ -206,13 +206,13 @@
             tap-ms = <50>;
             bindings =
                 <&kp DE_N3 &kp E>,
-                <&macro_wait_time 2000>,
+                <&macro_wait_time 2500>,
                 <&kp DE_N3 &kp E>,
-                <&macro_wait_time 2000>,
+                <&macro_wait_time 2500>,
                 <&kp DE_N3 &kp E>,
-                <&macro_wait_time 2000>,
+                <&macro_wait_time 2500>,
                 <&kp DE_N3 &kp E>,
-                <&macro_wait_time 2000>,
+                <&macro_wait_time 2500>,
                 <&kp DE_N3 &kp E>;
         };
 
