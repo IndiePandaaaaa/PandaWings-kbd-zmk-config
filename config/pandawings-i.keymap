@@ -145,7 +145,7 @@
 
         return {
             bindings = <&kp RETURN>;
-            key-positions = <36 37>;
+            key-positions = <18 19 20>;
             layers = <0 1>;
         };
 
@@ -161,15 +161,9 @@
             layers = <0 1>;
         };
 
-        return_2 {
-            bindings = <&kp RETURN>;
-            key-positions = <21 33>;
-            layers = <0 1>;
-        };
-
         shift_return {
             bindings = <&kp LS(RETURN)>;
-            key-positions = <10 22>;
+            key-positions = <11 12 13>;
             layers = <0 1>;
         };
 
