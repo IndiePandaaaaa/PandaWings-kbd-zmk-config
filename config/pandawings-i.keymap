@@ -107,6 +107,13 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 2 3 4 13 14 15 25 26 27 34 35 36>;
             hold-while-undecided;
         };
+
+        td_dot_comma: td_dot_comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_DOT_COMMA";
+            #binding-cells = <0>;
+            bindings = <&kp DE_DOT>, <&kp DE_COMMA>;
+        };
     };
 
     combos {
@@ -285,10 +292,10 @@
 
         DESKTOP+NUMBERS {
             bindings = <
-&kp LG(UP_ARROW)                      &kp LG(LEFT_ARROW)   &kp LG(E)  &kp LG(R)  &kp LG(LS(H))    &kp DE_EURO      &kp DE_N7  &kp DE_N8     &kp DE_N9  &as DE_CARET
-&kp LS(LEFT_GUI)  &none               &kp LG(LS(S))        &kp LG(D)  &kp LG(F)  &kp LG(LS(G))    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5     &kp DE_N6  &kp KP_PLUS   &kp KP_SLASH
-&kp LEFT_GUI      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(C)  &kp LG(V)  &kp LG(LS(B))    &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2     &kp DE_N3  &kp KP_MINUS  &as DE_DOT
-                                                           &none      &none      &none            &mo 4            &kp DE_N0  &kp DE_COMMA
+&kp LG(UP_ARROW)                      &kp LG(LEFT_ARROW)   &kp LG(E)  &kp LG(R)  &kp LG(LS(H))    &kp DE_EURO      &kp DE_N7  &kp DE_N8      &kp DE_N9  &as DE_CARET
+&kp LS(LEFT_GUI)  &none               &kp LG(LS(S))        &kp LG(D)  &kp LG(F)  &kp LG(LS(G))    &kp DE_EQUAL     &kp DE_N4  &kp DE_N5      &kp DE_N6  &kp KP_PLUS   &kp KP_SLASH
+&kp LEFT_GUI      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(C)  &kp LG(V)  &kp LG(LS(B))    &kp KP_ASTERISK  &kp DE_N1  &kp DE_N2      &kp DE_N3  &kp KP_MINUS  &as DE_DOT
+                                                           &none      &none      &none            &mo 4            &kp DE_N0  &td_dot_comma
             >;
         };
 
