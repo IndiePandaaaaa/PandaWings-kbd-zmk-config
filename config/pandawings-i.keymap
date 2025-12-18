@@ -181,6 +181,11 @@
             bindings = <&vimquit>;
             key-positions = <28 29>;
         };
+
+        arrow_down {
+            bindings = <&kp DOWN>;
+            key-positions = <29 30 31>;
+        };
     };
 
     macros {
