@@ -226,13 +226,13 @@
             tap-ms = <50>;
             bindings =
                 <&g_pw_nextpal>,
-                <&macro_wait_time 2500>,
+                <&macro_wait_time 1000>,
                 <&g_pw_nextpal>,
-                <&macro_wait_time 2500>,
+                <&macro_wait_time 1000>,
                 <&g_pw_nextpal>,
-                <&macro_wait_time 2500>,
+                <&macro_wait_time 1000>,
                 <&g_pw_nextpal>,
-                <&macro_wait_time 2500>,
+                <&macro_wait_time 1000>,
                 <&g_pw_nextpal>;
         };
 
