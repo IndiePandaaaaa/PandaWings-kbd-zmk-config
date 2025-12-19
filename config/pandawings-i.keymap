@@ -114,6 +114,15 @@
 
             tapping-term-ms = <250>;
         };
+
+        td_mod_shift_ctrl: td_mod_shift_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MOD_SHIFT_CTRL";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&kp LEFT_CONTROL>;
+
+            tapping-term-ms = <250>;
+        };
     };
 
     combos {
@@ -282,19 +291,19 @@
             //                      | SW19 | SW20 | SW21 |  | SW42 | SW41 | SW40 |
 
             bindings = <
-&kp Q                       &kp W           &kp E        &kp R        &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
-&kp ESCAPE      &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LSHFT F  &kp G           &kp H      &hm LEFT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_GUI DE_O_UMLAUT  &kp DE_U_UMLAUT
-&sk LEFT_SHIFT  &kp DE_Y    &kp X           &kp C        &kp V        &kp B           &kp N      &kp M             &as DE_COMMA        &as DE_DOT      &as DE_MINUS              &lt 4 DE_A_UMLAUT
-                                            &to 6        &kp SPACE    &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE     &as DE_SZ
+&kp Q                           &kp W           &kp E        &kp R        &kp T           &kp DE_Z   &kp U             &kp I               &kp O           &kp P
+&kp ESCAPE          &hm LGUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LSHFT F  &kp G           &kp H      &hm LEFT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L  &hm LEFT_GUI DE_O_UMLAUT  &kp DE_U_UMLAUT
+&td_mod_shift_ctrl  &kp DE_Y    &kp X           &kp C        &kp V        &kp B           &kp N      &kp M             &as DE_COMMA        &as DE_DOT      &as DE_MINUS              &lt 4 DE_A_UMLAUT
+                                                &to 6        &kp SPACE    &lt 2 DELETE    &lt 3 TAB  &kp BACKSPACE     &as DE_SZ
             >;
         };
 
         NEO-NOTED {
             bindings = <
-&kp DE_Z                        &kp DE_Y        &kp U            &kp A            &kp Q              &kp P      &kp B          &kp M         &kp L           &kp F
-&kp ESCAPE      &hm LEFT_GUI C  &hm LEFT_ALT S  &hm LCTRL I      &hm LSHIFT E     &kp O              &kp D      &hm LSHIFT T   &hm LCTRL N   &hm LEFT_ALT R  &hm LEFT_GUI H  &as DE_SZ
-&sk LEFT_SHIFT  &kp V           &kp X           &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT    &kp W      &kp G          &as DE_COMMA  &as DE_DOT      &kp K           &lt 4 J
-                                                &to 6            &kp SPACE        &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE  &as DE_MINUS
+&kp DE_Z                            &kp DE_Y        &kp U            &kp A            &kp Q              &kp P      &kp B          &kp M         &kp L           &kp F
+&kp ESCAPE          &hm LEFT_GUI C  &hm LEFT_ALT S  &hm LCTRL I      &hm LSHIFT E     &kp O              &kp D      &hm LSHIFT T   &hm LCTRL N   &hm LEFT_ALT R  &hm LEFT_GUI H  &as DE_SZ
+&td_mod_shift_ctrl  &kp V           &kp X           &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT    &kp W      &kp G          &as DE_COMMA  &as DE_DOT      &kp K           &lt 4 J
+                                                    &to 6            &kp SPACE        &lt 2 DELETE       &lt 3 TAB  &kp BACKSPACE  &as DE_MINUS
             >;
         };
 
