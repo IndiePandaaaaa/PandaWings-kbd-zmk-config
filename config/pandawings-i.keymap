@@ -274,6 +274,12 @@
             bindings = <&kp DE_COLON &kp W &kp A &kp RETURN>;
             label = "VIMSAVE";
         };
+        vimquit: vimquit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_COLON &kp Q &kp A &kp RETURN>;
+            label = "VIMQUIT";
+        };
     };
 
     keymap {
