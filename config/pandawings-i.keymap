@@ -200,7 +200,7 @@
     };
 
     macros {
-        g_vr_inventory: game_vrising_inventory_clear {
+        g_vr_inventory: g_vr_inventory {
             compatible = "zmk,behavior-macro";
             label = "GAME_VRISING_INVENTORY_CLEAR";
             #binding-cells = <0>;
@@ -209,20 +209,20 @@
             bindings = <&kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E>;
         };
 
-        g_pw_nextpal: game_palworld_next_pal {
+        g_pw_nextpal: g_pw_nextpal {
             compatible = "zmk,behavior-macro";
             label = "GAME_PALWORLD_NEXT_PAL";
             #binding-cells = <0>;
-            wait-ms = <200>;
-            tap-ms = <100>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings = <&kp DE_N3 &kp E>;
         };
 
-        g_pw_necklaced: game_palworld_necklace_spawn_fix {
+        g_pw_necklaced: g_pw_necklaced {
             compatible = "zmk,behavior-macro";
             label = "GAME_PALWORLD_NECKLACE_SPAWN_FIX";
             #binding-cells = <0>;
-            wait-ms = <100>;
+            wait-ms = <50>;
             tap-ms = <50>;
             bindings =
                 <&g_pw_nextpal>,
