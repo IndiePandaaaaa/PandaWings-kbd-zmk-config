@@ -198,31 +198,41 @@
     };
 
     macros {
-        game_vrise_inv_clear: game_vrise_inv_clear {
+        g_vr_inventory: game_vrising_inventory_clear {
             compatible = "zmk,behavior-macro";
-            label = "GAME_VRISE_INV_CLEAR";
+            label = "GAME_VRISING_INVENTORY_CLEAR";
             #binding-cells = <0>;
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = <&kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E &kp R &mkp RCLK &kp E>;
         };
 
-        game_palw_necklaced_pal_fix: game_palw_necklaced_pal_fix {
+        g_pw_nextpal: game_palworld_next_pal {
             compatible = "zmk,behavior-macro";
-            label = "GAME_PALW_NECKLACED_PAL_FIX";
+            label = "GAME_PALWORLD_NEXT_PAL";
+            #binding-cells = <0>;
+            wait-ms = <200>;
+            tap-ms = <100>;
+            bindings =
+                <&kp DE_N3 &kp E>,
+        };
+
+        g_pw_necklaced: game_palworld_necklace_spawn_fix {
+            compatible = "zmk,behavior-macro";
+            label = "GAME_PALWORLD_NECKLACE_SPAWN_FIX";
             #binding-cells = <0>;
             wait-ms = <100>;
             tap-ms = <50>;
             bindings =
-                <&kp DE_N3 &kp E>,
+                <&g_pw_nextpal>,
                 <&macro_wait_time 2500>,
-                <&kp DE_N3 &kp E>,
+                <&g_pw_nextpal>,
                 <&macro_wait_time 2500>,
-                <&kp DE_N3 &kp E>,
+                <&g_pw_nextpal>,
                 <&macro_wait_time 2500>,
-                <&kp DE_N3 &kp E>,
+                <&g_pw_nextpal>,
                 <&macro_wait_time 2500>,
-                <&kp DE_N3 &kp E>;
+                <&g_pw_nextpal>,
         };
 
         shifted: macro_shifted_kp {
@@ -346,8 +356,8 @@
         GAME_2 {
             bindings = <
 &none                    &kp DE_N2  &none      &kp DE_N4  &kp N        &none  &kp LS(TAB)    &kp LS(F2)     &kp LS(DE_CARET)         &none
-&kp DE_DOT    &kp F5     &kp DE_N1  &none      &kp DE_N3  &kp I        &none  &none          &kp LS(LC(M))  &kp LS(LC(DE_U_UMLAUT))  &none  &game_vrise_inv_clear
-&kp LEFT_ALT  &kp DE_N7  &kp B      &kp J      &kp T      &kp DE_N5    &none  &none          &none          &none                    &none  &game_palw_necklaced_pal_fix
+&kp DE_DOT    &kp F5     &kp DE_N1  &none      &kp DE_N3  &kp I        &none  &none          &kp LS(LC(M))  &kp LS(LC(DE_U_UMLAUT))  &none  &g_vr_inventory
+&kp LEFT_ALT  &kp DE_N7  &kp B      &kp J      &kp T      &kp DE_N5    &none  &none          &none          &none                    &none  &g_pw_necklaced
                                     &kp DE_N6  &none      &kp F12      &none  &kp BACKSPACE  &none
             >;
         };
