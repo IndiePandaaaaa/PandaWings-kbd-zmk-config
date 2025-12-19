@@ -225,7 +225,7 @@
             wait-ms = <200>;
             tap-ms = <100>;
             bindings =
-                <&kp DE_N3 &kp E>,
+                <&kp DE_N3 &kp E>;
         };
 
         g_pw_necklaced: game_palworld_necklace_spawn_fix {
