@@ -192,9 +192,9 @@
             layers = <0 1>;
         };
 
-        arrow_up {
-            bindings = <&kp UP>;
-            key-positions = <6 7 8>;
+        controller_reset {
+            bindings = <&bootloader>;
+            key-positions = <0 1 2 3>;
             layers = <0 1>;
         };
     };
@@ -274,6 +274,7 @@
             bindings = <&kp DE_COLON &kp W &kp A &kp RETURN>;
             label = "VIMSAVE";
         };
+
         vimquit: vimquit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
