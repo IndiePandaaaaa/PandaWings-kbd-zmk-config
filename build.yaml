@@ -12,13 +12,10 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
-# INFO: the dongle is now working so there is only the dongle version available
 ---
 include:
   - board: xiao_ble
     shield: settings_reset
-  - board: xiao_ble
-    shield: pandawings-i_dongle
   - board: xiao_ble
     shield: pandawings-i_left
   - board: xiao_ble
